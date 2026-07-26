@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Premium Course · ₦135,000</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: #0b0d15;
+      color: #eef2f6;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* buttons & cta */
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(145deg, #f5b042, #e8922a);
+      color: #0b0d15;
+      font-weight: 700;
+      padding: 14px 44px;
+      border-radius: 60px;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(245, 176, 66, 0.25);
+      transition: 0.3s ease;
+      border: none;
+      font-size: 1.1rem;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+    }
+
+    .btn-primary i {
+      margin-right: 10px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 32px rgba(245, 176, 66, 0.4);
+      background: linear-gradient(145deg, #fcc056, #e8922a);
+    }
+
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid #f5b042;
+      color: #f5b042;
+      padding: 12px 40px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #f5b042;
+      color: #0b0d15;
+    }
+
+    /* section titles */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #f5b042, #ffd68a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-sub {
+      color: #aab3c9;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 1.2rem;
+    }
+
+    /* header / nav */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #f5b042, #ffd68a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #f5b042;
+    }
+
+    /* hero */
+    .hero {
+      padding: 60px 0 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-content {
+      flex: 1 1 500px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(245, 176, 66, 0.15);
+      color: #f5b042;
+      padding: 6px 20px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 1px solid rgba(245, 176, 66, 0.25);
+    }
+
+    .hero h1 {
+      font-size: 3.8rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #f5b042, #ffd68a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #b9c4dd;
+      max-width: 540px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .price-tag {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f5b042;
+      background: rgba(245, 176, 66, 0.08);
+      padding: 8px 28px;
+      border-radius: 60px;
+      border: 1px solid rgba(245, 176, 66, 0.2);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-label {
+      color: #8892b0;
+      font-size: 0.9rem;
+    }
+
+    /* sections general */
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #131725;
+      padding: 32px 24px;
+      border-radius: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border-color: rgba(245, 176, 66, 0.2);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
+    }
+
+    .card i {
+      font-size: 2.4rem;
+      color: #f5b042;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aab3c9;
+    }
+
+    /* instructor */
+    .instructor-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      background: #10141f;
+      padding: 40px;
+      border-radius: 40px;
+      border: 1px solid #1e2538;
+    }
+
+    .instructor-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #f5b042, #c77d1e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #0b0d15;
+      flex-shrink: 0;
+    }
+
+    .instructor-info h3 {
+      font-size: 2rem;
+    }
+
+    .instructor-info p {
+      color: #b9c4dd;
+      max-width: 600px;
+    }
+
+    /* pricing box */
+    .pricing-box {
+      background: #131725;
+      border-radius: 40px;
+      padding: 48px 40px;
+      border: 1px solid rgba(245, 176, 66, 0.2);
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .pricing-box .price-large {
+      font-size: 4rem;
+      font-weight: 800;
+      color: #f5b042;
+    }
+
+    .pricing-box .price-small {
+      color: #8892b0;
+      margin: 12px 0 28px;
+    }
+
+    .pricing-box ul {
+      list-style: none;
+      text-align: left;
+      margin: 24px 0 32px;
+    }
+
+    .pricing-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pricing-box ul li i {
+      color: #f5b042;
+      width: 20px;
+    }
+
+    .guarantee-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(245, 176, 66, 0.06);
+      padding: 12px 20px;
+      border-radius: 60px;
+      margin-top: 20px;
+      border: 1px dashed rgba(245, 176, 66, 0.3);
+      color: #e2d9c0;
+    }
+
+    /* countdown */
+    .countdown-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 30px 0 20px;
+    }
+
+    .countdown-item {
+      background: #1a1f30;
+      padding: 12px 24px;
+      border-radius: 60px;
+      min-width: 80px;
+      text-align: center;
+      border: 1px solid #2a3147;
+    }
+
+    .countdown-item span {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f5b042;
+    }
+
+    .countdown-item small {
+      display: block;
+      color: #8892b0;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    /* faq */
+    .faq-item {
+      background: #131725;
+      border-radius: 20px;
+      padding: 20px 28px;
+      margin-bottom: 16px;
+      border: 1px solid #1e2538;
+    }
+
+    .faq-item h4 {
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: default;
+    }
+
+    .faq-item p {
+      color: #b9c4dd;
+      margin-top: 10px;
+    }
+
+    /* footer */
+    footer {
+      padding: 40px 0 30px;
+      text-align: center;
+      color: #5a6480;
+      border-top: 1px solid #1a1f30;
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.6rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .navbar {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .pricing-box {
+        padding: 32px 20px;
+      }
+      .instructor-wrap {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px;
+      }
+      .countdown-wrap {
+        gap: 12px;
+      }
+      .countdown-item {
+        min-width: 60px;
+        padding: 8px 14px;
+      }
+      .countdown-item span {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* animations (simple) */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+
+    /* testimonial */
+    .testimonial-card {
+      background: #10141f;
+      padding: 28px 24px;
+      border-radius: 28px;
+      border: 1px solid #1e2538;
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      color: #ccd6f0;
+    }
+
+    .testimonial-card .author {
+      margin-top: 16px;
+      font-weight: 600;
+      color: #f5b042;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-graduation-cap" style="margin-right: 8px;"></i>EduPro</div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#instructor">Instructor</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing" class="btn-primary" style="padding: 10px 24px; font-size: 0.9rem;"><i class="fas fa-bolt"></i> Enroll</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="overview">
+    <div class="hero-content fade-up">
+      <div class="hero-badge"><i class="fas fa-star" style="margin-right: 6px;"></i> Bestseller · 2,000+ students</div>
+      <h1>Master <span>Digital Business</span> in 2026</h1>
+      <p>Complete system to launch, scale & automate your online business. Live sessions, templates, and lifetime access.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn-primary"><i class="fas fa-rocket"></i> Enroll now · ₦135,000</a>
+        <span class="price-tag">₦135,000</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-number" id="studentsCount">2,847</span><span class="stat-label">students</span></div>
+        <div class="stat-item"><span class="stat-number" id="ratingCount">4.9</span><span class="stat-label">⭐ rating</span></div>
+        <div class="stat-item"><span class="stat-number" id="hoursCount">28</span><span class="stat-label">video hours</span></div>
+      </div>
+    </div>
+    <div style="flex:1; min-width:260px; background: #131725; border-radius: 40px; padding: 30px; border:1px solid #1e2538;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #1a1f30; border-radius: 20px; padding: 20px;">
+          <i class="fas fa-clock" style="color: #f5b042;"></i>
+          <p style="font-weight: 300; margin-top: 6px;">⏳ Offer ends in</p>
+          <div id="countdownTimer" class="countdown-wrap" style="margin: 10px 0 0; gap: 10px; justify-content: flex-start;">
+            <div class="countdown-item"><span id="days">12</span><small>days</small></div>
+            <div class="countdown-item"><span id="hours">08</span><small>hrs</small></div>
+            <div class="countdown-item"><span id="minutes">45</span><small>min</small></div>
+            <div class="countdown-item"><span id="seconds">30</span><small>sec</small></div>
+          </div>
+        </div>
+        <div style="background: #1a1f30; border-radius: 20px; padding: 16px 20px; display: flex; gap: 18px; flex-wrap: wrap;">
+          <span><i class="fas fa-check-circle" style="color: #f5b042;"></i> 8 modules</span>
+          <span><i class="fas fa-check-circle" style="color: #f5b042;"></i> 45 lessons</span>
+          <span><i class="fas fa-check-circle" style="color: #f5b042;"></i> Bonus pack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE OVERVIEW / OUTCOMES -->
+  <section id="overview">
+    <h2 class="section-title">What you'll learn</h2>
+    <p class="section-sub">Practical, step-by-step system to build a profitable online business.</p>
+    <div class="grid-2col">
+      <div class="card fade-up delay-1"><i class="fas fa-bullseye"></i><h3>Strategy & funnel</h3><p>Build high-converting sales funnels that attract and convert.</p></div>
+      <div class="card fade-up delay-2"><i class="fas fa-code"></i><h3>Automation</h3><p>Set up email, social & chatbot automations to scale effortlessly.</p></div>
+      <div class="card fade-up delay-3"><i class="fas fa-chart-line"></i><h3>Analytics</h3><p>Master data-driven decisions to double your revenue.</p></div>
+      <div class="card fade-up delay-1"><i class="fas fa-users"></i><h3>Community</h3><p>Build a loyal audience and turn followers into customers.</p></div>
+    </div>
+  </section>
+
+  <!-- BONUS SECTION -->
+  <section>
+    <h2 class="section-title">✨ Bonuses included</h2>
+    <div class="grid-2col">
+      <div class="card"><i class="fas fa-gem"></i><h3>Private community</h3><p>Lifetime access to our exclusive mastermind group.</p></div>
+      <div class="card"><i class="fas fa-download"></i><h3>Template pack</h3><p>50+ swipe files, scripts & checklists.</p></div>
+      <div class="card"><i class="fas fa-video"></i><h3>Live Q&A sessions</h3><p>Weekly calls with the instructor.</p></div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section id="instructor">
+    <div class="instructor-wrap fade-up">
+      <div class="instructor-avatar">JD</div>
+      <div class="instructor-info">
+        <h3>John Doe · <span style="color:#f5b042;">Lead Instructor</span></h3>
+        <p>Serial entrepreneur & online educator. Helped 10,000+ students start their digital businesses. Featured in Forbes, TechCrunch and Entrepreneur.</p>
+        <div style="margin-top: 16px; display: flex; gap: 20px; flex-wrap: wrap;">
+          <span><i class="fas fa-check-circle" style="color:#f5b042;"></i> 12 years experience</span>
+          <span><i class="fas fa-check-circle" style="color:#f5b042;"></i> 5x business exit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <h2 class="section-title">Student stories</h2>
+    <div class="grid-2col">
+      <div class="testimonial-card"><p>“This course changed my life. I went from zero to ₦2M in 3 months.”</p><div class="author">— Adeola K.</div></div>
+      <div class="testimonial-card"><p>“The best investment I ever made. Clear, actionable, and super supportive community.”</p><div class="author">— Chidi E.</div></div>
+      <div class="testimonial-card"><p>“I finally have a system that works. John is an amazing teacher.”</p><div class="author">— Zainab O.</div></div>
+    </div>
+  </section>
+
+  <!-- PRICING + FLUTTERWAVE BUTTON -->
+  <section id="pricing">
+    <div class="pricing-box fade-up">
+      <span class="badge" style="background: #f5b04220; padding:4px 16px; border-radius:40px; color:#f5b042;">🔥 limited spots</span>
+      <h2 style="margin-top: 20px;">Full course access</h2>
+      <div class="price-large">₦135,000</div>
+      <div class="price-small">One-time payment · lifetime access</div>
+      <ul>
+        <li><i class="fas fa-check"></i> 8 modules + 45 lessons</li>
+        <li><i class="fas fa-check"></i> Bonus templates & community</li>
+        <li><i class="fas fa-check"></i> Weekly live Q&A</li>
+        <li><i class="fas fa-check"></i> 30-day money-back guarantee</li>
+      </ul>
+      <!-- FLUTTERWAVE PAYMENT BUTTON (exact link) -->
+      <a href="https://flutterwave.com/pay/6ahrrwaflpy5" target="_blank" class="btn-primary" style="width:100%; text-align:center; padding:18px; font-size:1.3rem;">
+        <i class="fas fa-credit-card"></i> Pay with Flutterwave
+      </a>
+      <div class="guarantee-badge"><i class="fas fa-shield-alt"></i> 30-day money-back guarantee · no questions asked</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2 class="section-title">Frequently asked</h2>
+    <div style="max-width: 800px; margin:0 auto;">
+      <div class="faq-item"><h4>Is this course for beginners? <i class="fas fa-chevron-down" style="color:#f5b042;"></i></h4><p>Absolutely. We start from the fundamentals and go all the way to advanced tactics.</p></div>
+      <div class="faq-item"><h4>How long do I have access? <i class="fas fa-chevron-down" style="color:#f5b042;"></i></h4><p>Lifetime access — including all future updates.</p></div>
+      <div class="faq-item"><h4>What if I'm not satisfied? <i class="fas fa-chevron-down" style="color:#f5b042;"></i></h4><p>We offer a 30-day money-back guarantee, no hassle.</p></div>
+      <div class="faq-item"><h4>Is there a payment plan? <i class="fas fa-chevron-down" style="color:#f5b042;"></i></h4><p>Currently we offer a one-time payment of ₦135,000. Installments may be added soon.</p></div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="border-bottom: none; text-align:center;">
+    <h2 class="section-title" style="-webkit-text-fill-color: #fff; background: none; color:#fff;">Ready to transform your business?</h2>
+    <p style="color:#b9c4dd; max-width:600px; margin:0 auto 32px;">Join 2,000+ students who are already building their future.</p>
+    <a href="https://flutterwave.com/pay/6ahrrwaflpy5" target="_blank" class="btn-primary" style="padding:18px 60px; font-size:1.3rem;"><i class="fas fa-bolt"></i> Enroll Now · ₦135,000</a>
+  </section>
+
+  <footer>
+    <p>© 2026 EduPro · All rights reserved. · <a href="#" style="color:#8892b0; text-decoration:none;">Privacy</a> · <a href="#" style="color:#8892b0; text-decoration:none;">Terms</a></p>
+    <p style="margin-top:8px; font-size:0.85rem;">Built with <i class="fas fa-heart" style="color:#f5b042;"></i> for ambitious learners</p>
+  </footer>
+</div>
+
+<!-- COUNTDOWN TIMER SCRIPT -->
+<script>
+  (function() {
+    // Set countdown to 12 days from now
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 12);
+    targetDate.setHours(23, 59, 59, 999); // end of day
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+      if (distance < 0) {
+        document.getElementById('days').innerText = '00';
+        document.getElementById('hours').innerText = '00';
+        document.getElementById('minutes').innerText = '00';
+        document.getElementById('seconds').innerText = '00';
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = String(days).padStart(2, '0');
+      document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+
+  // simple animated counter for stats (optional)
+  document.addEventListener('DOMContentLoaded', function() {
+    const studentEl = document.getElementById('studentsCount');
+    if (studentEl) {
+      let current = 2000;
+      const target = 2847;
+      const step = Math.ceil((target - current) / 40);
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(interval);
+        }
+        studentEl.innerText = current.toLocaleString();
+      }, 30);
+    }
+  });
+</script>
+</body>
+</html>
