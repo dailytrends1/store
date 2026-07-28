@@ -19,17 +19,19 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
+  <!-- Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xtmdnciaeq");
-</script>
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
   <title>Create & Sell Digital Products with AI | PromiseTech247</title>
-  <!-- Font Awesome 6 for icons -->
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -40,8 +42,8 @@
 
     body {
       font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #000000;
-      color: #ffffff;
+      background: #0b0e0b;
+      color: #f0f0f0;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
@@ -49,83 +51,137 @@
     .container {
       max-width: 480px;
       margin: 0 auto;
-      background: #0a0a0a;
-      box-shadow: 0 0 30px rgba(0, 255, 0, 0.1);
+      background: #0d110d;
+      box-shadow: 0 0 40px rgba(22, 163, 74, 0.15);
       position: relative;
       overflow-x: hidden;
+      padding-bottom: 10px;
     }
 
-    /* Glassmorphism card style */
+    /* glass-morphism with neon edge */
     .glass-card {
-      background: rgba(20, 20, 20, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 24px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      background: rgba(18, 22, 18, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(22, 163, 74, 0.25);
+      border-radius: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(22, 163, 74, 0.1) inset;
       margin: 16px;
-      padding: 20px 18px;
+      padding: 22px 18px;
+      transition: all 0.2s;
     }
 
-    /* Green accent */
+    .glass-card:hover {
+      border-color: #16a34a;
+      box-shadow: 0 12px 40px rgba(22, 163, 74, 0.15);
+    }
+
     .green-text {
-      color: #16a34a;
+      color: #22c55e;
+      text-shadow: 0 0 12px rgba(34, 197, 94, 0.3);
     }
 
     .btn-green {
-      background: #16a34a;
+      background: linear-gradient(145deg, #16a34a, #0e7c34);
       border: none;
       color: white;
-      font-weight: bold;
-      padding: 16px 24px;
-      border-radius: 40px;
+      font-weight: 700;
+      padding: 18px 24px;
+      border-radius: 60px;
       font-size: 1.2rem;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.25s ease;
       text-align: center;
       display: inline-block;
       width: 100%;
       text-decoration: none;
-      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 28px rgba(22, 163, 74, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .btn-green:hover {
       background: #15803d;
-      transform: scale(1.02);
+      transform: scale(1.02) translateY(-2px);
+      box-shadow: 0 16px 36px rgba(22, 163, 74, 0.6);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(145deg, #25D366, #1da85c);
+      border: none;
+      color: white;
+      font-weight: 700;
+      padding: 18px 24px;
+      border-radius: 60px;
+      font-size: 1.2rem;
+      letter-spacing: 0.8px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-whatsapp:hover {
+      background: #1da85c;
+      transform: scale(1.02) translateY(-2px);
+      box-shadow: 0 16px 36px rgba(37, 211, 102, 0.5);
+    }
+
+    .dual-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .dual-btn-group .btn-green,
+    .dual-btn-group .btn-whatsapp {
+      width: 100%;
     }
 
     .sticky-buy {
       position: sticky;
-      bottom: 12px;
+      bottom: 16px;
       z-index: 50;
       margin: 0 16px 12px;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-radius: 50px;
-      padding: 8px 8px 8px 20px;
+      background: rgba(10, 14, 10, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-radius: 60px;
+      padding: 8px 8px 8px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border: 1px solid #16a34a;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      border: 1px solid #22c55e;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(34, 197, 94, 0.15);
     }
 
     .sticky-buy span {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #16a34a;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #22c55e;
+      letter-spacing: 0.5px;
     }
 
     .sticky-buy a {
-      background: #16a34a;
-      padding: 12px 24px;
-      border-radius: 30px;
+      background: linear-gradient(145deg, #16a34a, #0e7c34);
+      padding: 12px 28px;
+      border-radius: 40px;
       color: white;
-      font-weight: bold;
+      font-weight: 700;
       text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(22, 163, 74, 0.4);
+    }
+
+    .sticky-buy a:hover {
+      background: #15803d;
+      transform: scale(1.03);
     }
 
     .floating-whatsapp {
@@ -134,50 +190,62 @@
       right: 20px;
       background: #25D366;
       color: white;
-      width: 55px;
-      height: 55px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+      font-size: 30px;
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
       z-index: 100;
       text-decoration: none;
       transition: 0.2s;
+      border: 1px solid rgba(255,255,255,0.2);
     }
 
     .floating-whatsapp:hover {
-      transform: scale(1.08);
+      transform: scale(1.1) rotate(-4deg);
     }
 
     .countdown {
-      background: #1a1a1a;
-      border-radius: 16px;
-      padding: 10px 15px;
-      font-weight: bold;
+      background: #151e15;
+      border-radius: 60px;
+      padding: 12px 20px;
+      font-weight: 700;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      color: #16a34a;
-      font-size: 1.3rem;
-      letter-spacing: 1px;
+      gap: 14px;
+      color: #22c55e;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+      backdrop-filter: blur(4px);
     }
 
     .stars {
       color: #fbbf24;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
+      font-size: 1.2rem;
     }
 
-    .module-list i, .check-list i {
-      color: #16a34a;
-      margin-right: 10px;
+    .check-list div {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .check-list i {
+      color: #22c55e;
+      margin-right: 12px;
+      width: 20px;
+      text-align: center;
     }
 
     .faq-item {
-      border-bottom: 1px solid rgba(255,255,255,0.15);
-      padding: 14px 0;
+      border-bottom: 1px solid rgba(34, 197, 94, 0.15);
+      padding: 16px 0;
     }
 
     .faq-question {
@@ -186,57 +254,59 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      color: #e0e0e0;
+      color: #eaeaea;
+      font-size: 1.05rem;
     }
 
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.4s ease;
-      color: #b0b0b0;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      color: #b8c9b8;
       margin-top: 0;
+      padding-left: 6px;
     }
 
     .faq-answer.open {
-      max-height: 150px;
-      margin-top: 10px;
+      max-height: 160px;
+      margin-top: 12px;
     }
 
-    .payment-badges img {
-      height: 28px;
-      margin-right: 8px;
-      filter: grayscale(0.2);
+    .payment-badges span {
+      background: #1a221a;
+      padding: 6px 14px;
+      border-radius: 40px;
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      margin: 0 6px 6px 0;
+      display: inline-block;
+      font-size: 0.75rem;
+      color: #b0c0b0;
     }
 
-    hr {
-      border-color: #2a2a2a;
-      margin: 18px 0;
-    }
-
-    /* Earnings image gallery */
     .earnings-gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       justify-content: center;
-      margin-top: 16px;
+      margin-top: 18px;
     }
 
     .earnings-img {
       width: 100%;
       max-width: 140px;
-      border-radius: 16px;
-      border: 2px solid #16a34a;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-      transition: transform 0.2s;
-      background: #1e1e1e;
+      border-radius: 20px;
+      border: 2px solid #22c55e;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.7), 0 0 0 1px rgba(34, 197, 94, 0.2);
+      transition: all 0.3s ease;
+      background: #141c14;
       object-fit: cover;
       aspect-ratio: 1 / 1.2;
     }
 
     .earnings-img:hover {
-      transform: scale(1.03);
-      border-color: #22c55e;
+      transform: scale(1.04) translateY(-4px);
+      border-color: #4ade80;
+      box-shadow: 0 16px 36px rgba(34, 197, 94, 0.3);
     }
 
     @media (max-width: 400px) {
@@ -245,149 +315,164 @@
         padding: 16px;
       }
       .earnings-img {
-        max-width: 120px;
+        max-width: 110px;
       }
+    }
+
+    /* glowing gradient text */
+    .gradient-headline {
+      background: linear-gradient(135deg, #f0faf0, #86efac, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+    }
+
+    .badge-pill {
+      background: #1a2a1a;
+      border-radius: 40px;
+      padding: 4px 16px;
+      display: inline-block;
+      font-size: 0.8rem;
+      border: 1px solid #22c55e;
+      color: #86efac;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Hero Section -->
-    <section class="glass-card" style="margin-top: 20px; text-align: center;">
-      <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.2;">Learn How To Create & Sell Your Own Digital Products Using AI</h1>
-      <p style="color: #cccccc; margin: 12px 0; font-size: 1rem;">Learn how to build an online business from your phone—even if you're starting from zero.</p>
-      <p style="font-weight: 600; color: #ffffff; background: #1f1f1f; padding: 10px; border-radius: 30px; margin: 15px 0;">Stop watching other people make money online.</p>
-      <p style="font-size: 0.95rem; color: #bbbbbb;">Inside this step-by-step course, you'll learn how to create digital products using AI that will help you make 100k to 500k every months, build your own sales website, and promote your products using Facebook and TikTok ads.</p>
+
+    <!-- HERO SECTION -->
+    <section class="glass-card" style="margin-top: 20px; text-align: center; background: radial-gradient(circle at 20% 30%, #112011, #0a0e0a);">
+      <span class="badge-pill"><i class="fas fa-rocket green-text"></i> LIVE + BONUS</span>
+      <h1 style="font-size: 2.4rem; font-weight: 800; line-height: 1.2; margin-top: 10px;" class="gradient-headline">Create & Sell Digital Products with AI</h1>
+      <p style="color: #cbd5c1; margin: 14px 0; font-size: 1.05rem;">Build a profitable online business from your phone — zero experience needed.</p>
+      <p style="font-weight: 600; background: #1a2a1a; padding: 12px 16px; border-radius: 40px; margin: 16px 0; border-left: 4px solid #22c55e;">🔥 Stop watching others win. Start building your own empire.</p>
+      <p style="font-size: 0.95rem; color: #b8c9b8;">Inside: AI-powered product creation, sales website, Facebook & TikTok ads – everything you need to make ₦100k–₦500k/month.</p>
       
-      <div style="font-size: 42px; font-weight: bold; color: #16a34a; margin: 18px 0 8px;">Only ₦1,500</div>
-      <!-- HERO CTA BUTTON WITH PIXEL TRACKING -->
-      <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" style="display: block; margin-top: 10px;" onclick="trackCTAClick('Hero Section')">
-        <i class="fas fa-shopping-cart"></i> Buy Now
-      </a>
-      <div class="stars" style="margin-top: 15px;">⭐⭐⭐⭐⭐</div>
-      <p style="font-size: 0.85rem; color: #aaa;">Your phone could help you build a business today instead of just scrolling all day on Tiktok or Facebook that is why you need to buy this course today. In this course, I'll show you how i use Ai to create a 1m/month digital product from scratch, build a website to sell it, and use Facebook and TikTok ads to reach customers to purchase those product from the comfort of your home. Using this strategy i was able to generate what you're seing now. Stop waiting for the perfect opportunity. Click Buy Now to purchase the course and start learning today for just 1,500.
-        Trusted by students learning digital business.</p>
+      <div style="font-size: 48px; font-weight: 900; color: #22c55e; margin: 20px 0 8px; text-shadow: 0 0 30px rgba(34,197,94,0.3);">₦1,500</div>
+      
+      <!-- DUAL BUTTONS: WhatsApp (tracks Lead) + Payment (tracks Purchase) -->
+      <div class="dual-btn-group">
+        <!-- WhatsApp button tracks LEAD (but text is clean) -->
+        <a href="https://wa.link/hu7xp3" class="btn-whatsapp" target="_blank" onclick="trackLead('Hero WhatsApp')">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <!-- Payment button tracks PURCHASE (but text is clean) -->
+        <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" onclick="trackPurchase('Hero Payment')">
+          <i class="fas fa-bolt"></i> Get Instant Access
+        </a>
+      </div>
+      
+      <div class="stars" style="margin-top: 16px;">⭐⭐⭐⭐⭐</div>
+      <p style="font-size: 0.85rem; color: #9aaa9a; margin-top: 14px;">Stop scrolling, start selling. This course shows you exactly how I built a ₦1M/month digital product business. Trusted by hundreds of students.</p>
     </section>
 
-    <!-- Personal Earnings Proof (Selar) -->
+    <!-- PERSONAL EARNINGS PROOF -->
     <section class="glass-card">
-      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
-        <i class="fas fa-chart-line green-text" style="font-size: 1.8rem;"></i>
-        <h2 style="font-size: 1.6rem;">My Personal Results</h2>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <i class="fas fa-chart-line green-text" style="font-size: 2rem;"></i>
+        <h2 style="font-size: 1.7rem;">My Real Results</h2>
       </div>
-      <p style="color: #ccc; margin-bottom: 8px;">Real earnings from selling the exact course I created using this method on Selar.</p>
-      
-      <!-- IMAGE PLACEHOLDER SECTION: Replace the src links below with your actual Selar earnings screenshots -->
+      <p style="color: #cbd5c1;">Actual earnings from selling the course I created using this system.</p>
       <div class="earnings-gallery">
-        <!-- IMAGE 1: Replace with your link -->
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_N0XYTfTWRaPWX1WUoJvKjUc0maY50OQmMYnYpOssu-zPiu4N_DixVwZFj03kg1C6J5ld7BEHMgcBpmExPNncramycBY7KRY8XV2keEJuo83oEiCuHsAX_N0YTQBDQ-gOxsVbMkZ4ayl-Z2qRMK8OjOW3X8QvpV7cmxvDDuhtx48myXrq613lz0b2ioA/s1200/john-ibukun1n-a-1749205253-jpg-selar.com-20250606102053.jpg" alt="Selar earnings proof 1" class="earnings-img" loading="lazy">
-        <!-- IMAGE 2: Replace with your link -->
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYxaMccV4kHBynrt__sBUscqvtKrVb2b1nfzQeFwtnaKRKrtYWt-8ukhbbkbRCp5NopLDQgxNb9Y8RYFT_cikFsX_2KJp6S5iA9tzF1HL9LtLdyfcalrUZEa_MrfXhlb9S6Lurz5tRBXuLOjGiPifZVg_SnXAkpS1cahBOZoD4PRpueYkIiRA8YPmCiwE/s1200/john-ibukun1n-a-1749434468-jpg-selar.com-20250609020108.jpg" alt="Selar earnings proof 2" class="earnings-img" loading="lazy">
-        <!-- IMAGE 3: Replace with your link (optional, you can add or remove) -->
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigheoZcbVMGtYTLEF4k6fwvPkPuVR13ZIsQgeaxMniwxE6MoE7ribcuYBTsAIcqSzLHbpRmh407YG5iWCswG6tynAOllMAnJwDn8-ePRDkdIkdcZ56etmkp8X3CukZN1g7LMgQC1EhNISnMqz1aEw11UAIa9IpnroyLH0Dc7RlrJGEb9q7jaavElbL_TE/s488/john-ibukun1n-a-1749243685-jpg-selar.com-20250606090125.jpg" alt="Selar earnings proof 3" class="earnings-img" loading="lazy">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_N0XYTfTWRaPWX1WUoJvKjUc0maY50OQmMYnYpOssu-zPiu4N_DixVwZFj03kg1C6J5ld7BEHMgcBpmExPNncramycBY7KRY8XV2keEJuo83oEiCuHsAX_N0YTQBDQ-gOxsVbMkZ4ayl-Z2qRMK8OjOW3X8QvpV7cmxvDDuhtx48myXrq613lz0b2ioA/s1200/john-ibukun1n-a-1749205253-jpg-selar.com-20250606102053.jpg" alt="earnings proof 1" class="earnings-img" loading="lazy">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYxaMccV4kHBynrt__sBUscqvtKrVb2b1nfzQeFwtnaKRKrtYWt-8ukhbbkbRCp5NopLDQgxNb9Y8RYFT_cikFsX_2KJp6S5iA9tzF1HL9LtLdyfcalrUZEa_MrfXhlb9S6Lurz5tRBXuLOjGiPifZVg_SnXAkpS1cahBOZoD4PRpueYkIiRA8YPmCiwE/s1200/john-ibukun1n-a-1749434468-jpg-selar.com-20250609020108.jpg" alt="earnings proof 2" class="earnings-img" loading="lazy">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigheoZcbVMGtYTLEF4k6fwvPkPuVR13ZIsQgeaxMniwxE6MoE7ribcuYBTsAIcqSzLHbpRmh407YG5iWCswG6tynAOllMAnJwDn8-ePRDkdIkdcZ56etmkp8X3CukZN1g7LMgQC1EhNISnMqz1aEw11UAIa9IpnroyLH0Dc7RlrJGEb9q7jaavElbL_TE/s488/john-ibukun1n-a-1749243685-jpg-selar.com-20250606090125.jpg" alt="earnings proof 3" class="earnings-img" loading="lazy">
       </div>
-      <p style="font-size:0.8rem; color:#666; margin-top:12px; text-align:center;">💰 Results from selling this course template on Selar.</p>
+      <p style="font-size:0.75rem; color:#7a8a7a; margin-top:14px; text-align:center; border-top: 1px solid #1e2a1e; padding-top: 12px;">💰 Real screenshots from Selar – this can be you.</p>
     </section>
 
-    <!-- Why This Course -->
+    <!-- WHY THIS COURSE -->
     <section class="glass-card">
-      <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Why This Course?</h2>
-      <p style="color: #ccc;">Most people online spend years promoting other people's products.</p>
-      <p style="font-weight: bold; margin: 10px 0;">Instead...</p>
-      <p style="font-size: 1.2rem; font-weight: 600;">Learn how to create something that <span class="green-text">belongs to you.</span></p>
-      <p style="margin-top: 12px;">When you own your digital product, you're in control of:</p>
-      <div class="check-list" style="margin-top: 8px;">
-        <div><i class="fas fa-check-circle"></i> Your pricing</div>
-        <div><i class="fas fa-check-circle"></i> Your brand</div>
-        <div><i class="fas fa-check-circle"></i> Your customers</div>
-        <div><i class="fas fa-check-circle"></i> Your business</div>
+      <h2 style="font-size: 1.8rem; margin-bottom: 6px;">Why This Course?</h2>
+      <p style="color: #cbd5c1;">Most people spend years promoting other people's products.</p>
+      <p style="font-weight: 700; margin: 10px 0; font-size: 1.2rem;">Instead, create something that <span class="green-text">belongs to you.</span></p>
+      <div class="check-list" style="margin-top: 14px;">
+        <div><i class="fas fa-check-circle"></i> Your pricing, your brand</div>
+        <div><i class="fas fa-check-circle"></i> Your customers, your business</div>
+        <div><i class="fas fa-check-circle"></i> 100% ownership</div>
       </div>
     </section>
 
-    <!-- What You'll Learn Modules -->
+    <!-- MODULES -->
     <section class="glass-card">
       <h2 style="font-size: 1.8rem;">What You'll Learn</h2>
-      <div style="margin-top: 15px;">
-        <div style="margin-bottom: 16px;">
+      <div style="margin-top: 16px;">
+        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
           <h3 class="green-text"><i class="fas fa-robot"></i> Module 1</h3>
-          <p style="font-weight: bold;">Create Digital Products with AI</p>
-          <div class="check-list">
-            <div><i class="fas fa-check"></i> eBooks</div>
-            <div><i class="fas fa-check"></i> Online Courses</div>
-            <div><i class="fas fa-check"></i> PDF Guides</div>
-            <div><i class="fas fa-check"></i> Templates</div>
-            <div><i class="fas fa-check"></i> Checklists</div>
-            <div><i class="fas fa-check"></i> Digital Downloads</div>
+          <p><strong>Create Digital Products with AI</strong></p>
+          <div class="check-list" style="margin-top: 6px;">
+            <div><i class="fas fa-check"></i> eBooks, Courses, PDFs</div>
+            <div><i class="fas fa-check"></i> Templates & Checklists</div>
+            <div><i class="fas fa-check"></i> No design/writing skills needed</div>
           </div>
-          <p style="font-size:0.9rem; color:#aaa;">No design or writing experience required.</p>
         </div>
-        <div style="margin-bottom: 16px;">
+        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
           <h3 class="green-text"><i class="fas fa-laptop-code"></i> Module 2</h3>
-          <p><strong>Build Your Own Sales Website</strong> – No coding required.</p>
+          <p><strong>Build Your Sales Website</strong> – No code, drag & drop.</p>
         </div>
-        <div style="margin-bottom: 16px;">
+        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
           <h3 class="green-text"><i class="fab fa-facebook"></i> Module 3</h3>
-          <p><strong>Facebook Ads</strong> – Reach people interested in buying.</p>
+          <p><strong>Facebook Ads</strong> – Target buyers & scale.</p>
         </div>
-        <div style="margin-bottom: 16px;">
+        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
           <h3 class="green-text"><i class="fab fa-tiktok"></i> Module 4</h3>
-          <p><strong>TikTok Marketing</strong> – Attract customers using videos & paid promotions.</p>
+          <p><strong>TikTok Marketing</strong> – Viral videos + paid promotions.</p>
         </div>
-        <div>
+        <div style="background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
           <h3 class="green-text"><i class="fas fa-bolt"></i> Module 5</h3>
-          <p><strong>AI Productivity Tools</strong> – Save time, streamline workflow.</p>
+          <p><strong>AI Productivity Tools</strong> – Automate & save time.</p>
         </div>
       </div>
     </section>
 
-    <!-- Why Students Love -->
+    <!-- STUDENT LOVE -->
     <section class="glass-card">
-      <h2 style="font-size: 1.6rem;">Why Students Love This Course</h2>
-      <div class="check-list" style="margin-top: 10px;">
-        <div><i class="fas fa-check-circle"></i> Beginner Friendly</div>
-        <div><i class="fas fa-check-circle"></i> Step-by-Step Videos</div>
-        <div><i class="fas fa-check-circle"></i> Lifetime Access</div>
-        <div><i class="fas fa-check-circle"></i> Learn at Your Own Pace</div>
-        <div><i class="fas fa-check-circle"></i> Mobile Friendly</div>
-        <div><i class="fas fa-check-circle"></i> Practical Lessons</div>
+      <h2 style="font-size: 1.6rem;">Why Students Love This</h2>
+      <div class="check-list" style="margin-top: 12px;">
+        <div><i class="fas fa-check-circle"></i> Beginner friendly</div>
+        <div><i class="fas fa-check-circle"></i> Step-by-step videos</div>
+        <div><i class="fas fa-check-circle"></i> Lifetime access</div>
+        <div><i class="fas fa-check-circle"></i> Mobile friendly</div>
+        <div><i class="fas fa-check-circle"></i> Practical & actionable</div>
       </div>
     </section>
 
-    <!-- Is This For You & Course Includes -->
+    <!-- IS THIS FOR YOU + INCLUDES -->
     <section class="glass-card">
-      <h3>Is This Course For You?</h3>
-      <div class="check-list" style="margin: 10px 0 18px;">
-        <div><i class="fas fa-check"></i> You want to build an online business.</div>
-        <div><i class="fas fa-check"></i> You want to learn digital skills.</div>
-        <div><i class="fas fa-check"></i> You want to create your own products.</div>
-        <div><i class="fas fa-check"></i> You want to learn online marketing.</div>
-        <div><i class="fas fa-check"></i> You have a smartphone or laptop.</div>
+      <h3>Is This For You?</h3>
+      <div class="check-list" style="margin: 12px 0 18px;">
+        <div><i class="fas fa-check"></i> You want to build an online business</div>
+        <div><i class="fas fa-check"></i> You want to learn digital skills</div>
+        <div><i class="fas fa-check"></i> You want to create your own products</div>
+        <div><i class="fas fa-check"></i> You have a smartphone or laptop</div>
       </div>
       <h3>Course Includes</h3>
-      <p><i class="fas fa-video green-text"></i> 📚 Full Video Training</p>
-      <p><i class="fas fa-file-download green-text"></i> 📄 Downloadable Resources</p>
-      <p><i class="fas fa-gift green-text"></i> 🎁 Bonus Materials</p>
-      <p><i class="fas fa-sync-alt green-text"></i> 🔄 Lifetime Updates</p>
-      <p><i class="fas fa-mobile-alt green-text"></i> 📱 Mobile Access</p>
+      <p style="margin: 4px 0;"><i class="fas fa-video green-text"></i> 📚 Full Video Training</p>
+      <p style="margin: 4px 0;"><i class="fas fa-file-download green-text"></i> 📄 Downloadable Resources</p>
+      <p style="margin: 4px 0;"><i class="fas fa-gift green-text"></i> 🎁 Bonus Materials</p>
+      <p style="margin: 4px 0;"><i class="fas fa-sync-alt green-text"></i> 🔄 Lifetime Updates</p>
+      <p style="margin: 4px 0;"><i class="fas fa-mobile-alt green-text"></i> 📱 Mobile Access</p>
     </section>
 
-    <!-- Student Feedback (Real students only) -->
+    <!-- STUDENT FEEDBACK -->
     <section class="glass-card">
       <h2>Student Feedback</h2>
-      <div style="margin-top: 10px;">
-        <div style="margin-bottom: 15px;">⭐⭐⭐⭐⭐ <br> "The lessons were easy to follow and helped me understand how digital products work."</div>
-        <div style="margin-bottom: 15px;">⭐⭐⭐⭐⭐ <br> "I built my first website after completing the training."</div>
-        <div>⭐⭐⭐⭐⭐ <br> "The Facebook advertising section was especially useful."</div>
+      <div style="margin-top: 12px;">
+        <div style="margin-bottom: 16px; background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "The lessons were easy to follow and helped me understand digital products."</div>
+        <div style="margin-bottom: 16px; background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "I built my first website after completing the training."</div>
+        <div style="background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "The Facebook advertising section was especially useful."</div>
       </div>
-      <p style="font-size:0.8rem; color:#666; margin-top:12px;">(Only include testimonials that are from real students.)</p>
+      <p style="font-size:0.7rem; color:#6a7a6a; margin-top:14px;">(real students, real results)</p>
     </section>
 
-    <!-- FAQ Accordion -->
+    <!-- FAQ -->
     <section class="glass-card">
-      <h2 style="margin-bottom: 10px;">Frequently Asked Questions</h2>
+      <h2 style="margin-bottom: 12px;">Frequently Asked Questions</h2>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFAQ(this)">Do I need experience? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">No. Everything is explained from the beginning.</div>
+        <div class="faq-answer">No. Everything is explained from scratch.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFAQ(this)">Can I use my phone? <i class="fas fa-chevron-down"></i></div>
@@ -403,89 +488,99 @@
       </div>
     </section>
 
-    <!-- Price & Countdown -->
-    <section class="glass-card" style="text-align: center;">
-      <div style="text-decoration: line-through; color: #888; font-size: 1.2rem;">₦10,000</div>
-      <div style="font-size: 2.5rem; font-weight: 800; color: #16a34a;">Today Only ₦1,500</div>
-      <div class="countdown" id="countdownTimer" style="margin: 15px 0;">
-        <span id="timerDisplay">09:59</span>
+    <!-- PRICE + COUNTDOWN + DUAL BUTTONS AGAIN -->
+    <section class="glass-card" style="text-align: center; background: radial-gradient(circle at 50% 20%, #142014, #0a0e0a);">
+      <div style="text-decoration: line-through; color: #7a8a7a; font-size: 1.2rem;">₦10,000</div>
+      <div style="font-size: 3rem; font-weight: 900; color: #22c55e; text-shadow: 0 0 40px rgba(34,197,94,0.2);">Today Only ₦1,500</div>
+      <div class="countdown" id="countdownTimer" style="margin: 18px 0;">
+        <i class="fas fa-clock green-text"></i> <span id="timerDisplay">09:59</span>
       </div>
-      <!-- PRICE SECTION CTA BUTTON WITH PIXEL TRACKING -->
-      <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" style="margin-top: 5px;" onclick="trackCTAClick('Price Section')">
-        BUY NOW – ₦1,500
-      </a>
-      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px; align-items: center;">
+      
+      <!-- DUAL BUTTONS (bottom) with clean text -->
+      <div class="dual-btn-group">
+        <a href="https://wa.link/hu7xp3" class="btn-whatsapp" target="_blank" onclick="trackLead('Bottom WhatsApp')">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" onclick="trackPurchase('Bottom Payment')">
+          <i class="fas fa-shopping-cart"></i> BUY NOW – ₦1,500
+        </a>
+      </div>
+      
+      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 18px; flex-wrap: wrap;">
         <span><i class="fas fa-lock green-text"></i> Secure Checkout</span>
         <span><i class="fas fa-bolt green-text"></i> Instant Access</span>
         <span><i class="fas fa-headset green-text"></i> Support</span>
       </div>
     </section>
 
-    <!-- Footer -->
-    <div style="padding: 20px; text-align: center; font-size: 0.8rem; color: #666;">
-      <div class="payment-badges" style="margin-bottom: 10px;">
-        <span style="background:#222; padding:5px 12px; border-radius:20px; margin:0 4px;"><i class="fas fa-shield-alt green-text"></i> Flutterwave</span>
-        <span style="background:#222; padding:5px 12px; border-radius:20px;"><i class="fas fa-lock green-text"></i> Secure Payment</span>
-        <span style="background:#222; padding:5px 12px; border-radius:20px;"><i class="fas fa-truck green-text"></i> Instant Delivery</span>
+    <!-- FOOTER -->
+    <div style="padding: 20px 16px; text-align: center; font-size: 0.8rem; color: #6a7a6a;">
+      <div class="payment-badges" style="margin-bottom: 14px;">
+        <span><i class="fas fa-shield-alt green-text"></i> Flutterwave</span>
+        <span><i class="fas fa-lock green-text"></i> Secure Payment</span>
+        <span><i class="fas fa-truck green-text"></i> Instant Delivery</span>
       </div>
       <p>© 2026 PromiseTech247</p>
     </div>
   </div>
 
-  <!-- Sticky Buy Button -->
+  <!-- STICKY BUY (tracks Purchase) -->
   <div class="sticky-buy" id="stickyBar">
     <span>₦1,500</span>
-    <!-- STICKY BAR CTA WITH PIXEL TRACKING -->
-    <a href="https://flutterwave.com/pay/prkzhgrsm3xl" onclick="trackCTAClick('Sticky Bar')">Buy Now</a>
+    <a href="https://flutterwave.com/pay/prkzhgrsm3xl" onclick="trackPurchase('Sticky Bar')">Buy Now</a>
   </div>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.link/hu7xp3" class="floating-whatsapp" title="Chat on WhatsApp">
+  <!-- FLOATING WHATSAPP (tracks Lead) -->
+  <a href="https://wa.link/hu7xp3" class="floating-whatsapp" title="Chat on WhatsApp" onclick="trackLead('Floating WhatsApp')">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Exit Intent Popup (simple overlay) -->
-  <div id="exitPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); backdrop-filter:blur(8px); z-index:200; align-items:center; justify-content:center;">
-    <div style="background:#111; border:1px solid #16a34a; border-radius:24px; padding:24px; max-width:300px; text-align:center; margin:20px;">
-      <h3 style="color:#16a34a;">Wait! Don't leave empty-handed.</h3>
-      <p style="margin:10px 0;">Get the course now for <strong>₦1,500</strong> instead of ₦10,000.</p>
-      <!-- EXIT POPUP CTA WITH PIXEL TRACKING -->
-      <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" style="display:block; margin-top:15px;" 
-         onclick="trackCTAClick('Exit Popup'); document.getElementById('exitPopup').style.display='none'">
-        Get Instant Access
+  <!-- EXIT POPUP (tracks Purchase) -->
+  <div id="exitPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); backdrop-filter:blur(12px); z-index:200; align-items:center; justify-content:center;">
+    <div style="background:#0f150f; border:1px solid #22c55e; border-radius:32px; padding:28px 22px; max-width:320px; text-align:center; margin:20px; box-shadow: 0 24px 60px rgba(0,0,0,0.8);">
+      <h3 style="color:#22c55e; font-size: 1.6rem;">⏳ Wait!</h3>
+      <p style="margin:14px 0; color:#d0e0d0;">Get the course now for <strong>₦1,500</strong> instead of ₦10,000.</p>
+      <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" style="display:block; margin-top:16px;" 
+         onclick="trackPurchase('Exit Popup'); document.getElementById('exitPopup').style.display='none'">
+        <i class="fas fa-gem"></i> Get Instant Access
       </a>
-      <button onclick="document.getElementById('exitPopup').style.display='none'" style="background:none; border:none; color:#aaa; margin-top:12px; cursor:pointer;">Close</button>
+      <button onclick="document.getElementById('exitPopup').style.display='none'" style="background:none; border:none; color:#8a9a8a; margin-top:16px; cursor:pointer; font-size:0.9rem;">No thanks, I'll miss out</button>
     </div>
   </div>
 
   <script>
-    // ✅ FACEBOOK PIXEL TRACKING FUNCTION
-    // This function fires every time a CTA button is clicked
-    function trackCTAClick(buttonLocation) {
-      // Check if Facebook Pixel is loaded
+    // ✅ FACEBOOK PIXEL TRACKING: LEAD events for WhatsApp buttons
+    function trackLead(location) {
       if (typeof fbq === 'function') {
-        // Track a 'Lead' event (standard event for signup/purchase intent)
         fbq('track', 'Lead', {
+          content_name: 'Digital Products Course - WhatsApp Lead',
+          content_category: 'Online Course',
+          cta_location: location,
+          currency: 'NGN'
+        });
+        console.log('✅ LEAD tracked from: ' + location);
+      } else {
+        console.warn('⚠️ Pixel not loaded');
+      }
+    }
+
+    // ✅ FACEBOOK PIXEL TRACKING: PURCHASE events for payment buttons
+    function trackPurchase(location) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Purchase', {
           content_name: 'Digital Products Course',
           content_category: 'Online Course',
           value: 1500,
           currency: 'NGN',
-          cta_location: buttonLocation
+          cta_location: location
         });
-        
-        // Also track a custom 'CTAClick' event for more granular reporting
-        fbq('trackCustom', 'CTAClick', {
-          button_location: buttonLocation,
-          page_url: window.location.href
-        });
-        
-        console.log('✅ Pixel tracked: Lead + CTAClick from ' + buttonLocation);
+        console.log('✅ PURCHASE tracked from: ' + location);
       } else {
-        console.warn('⚠️ Facebook Pixel not loaded yet');
+        console.warn('⚠️ Pixel not loaded');
       }
     }
 
-    // FAQ Accordion toggle
+    // FAQ toggle
     function toggleFAQ(element) {
       const answer = element.nextElementSibling;
       const icon = element.querySelector('i');
@@ -498,7 +593,7 @@
       }
     }
 
-    // Countdown timer (30 minutes from page load)
+    // Countdown (30 min)
     function startCountdown(durationInSeconds) {
       const display = document.getElementById('timerDisplay');
       let timer = durationInSeconds, minutes, seconds;
@@ -514,24 +609,22 @@
         }
       }, 1000);
     }
-    // 30 minutes = 1800 seconds
     startCountdown(1800);
 
-    // Exit intent popup (desktop mouse leave)
+    // Exit intent
     document.addEventListener('mouseout', function(e) {
       if (e.clientY < 10 && !e.relatedTarget && !e.toElement) {
         document.getElementById('exitPopup').style.display = 'flex';
       }
     });
 
-    // Close popup when clicking outside content
     document.getElementById('exitPopup').addEventListener('click', function(e) {
       if (e.target === this) {
         this.style.display = 'none';
       }
     });
 
-    // Sticky bar subtle opacity
+    // Sticky bar visibility
     window.addEventListener('scroll', () => {
       const sticky = document.getElementById('stickyBar');
       if (window.scrollY > 300) {
