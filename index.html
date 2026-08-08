@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
+  <!-- Facebook Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,621 +17,656 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1787122752838589&ev=PageView&noscript=1"
   /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xtmdnciaeq");
-  </script>
+  <!-- End Facebook Pixel Code -->
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <title>Create & Sell Digital Products with AI | PromiseTech247</title>
-  <!-- Font Awesome 6 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>PromiseTech Academy · Certified Affiliate & AI Creator</title>
+  <!-- Bootstrap 5 + Font Awesome 6 (Free) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #0b0e0b;
-      color: #f0f0f0;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      max-width: 480px;
-      margin: 0 auto;
-      background: #0d110d;
-      box-shadow: 0 0 40px rgba(22, 163, 74, 0.15);
-      position: relative;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0d15;
+      color: #eef2f7;
       overflow-x: hidden;
-      padding-bottom: 10px;
+      padding-bottom: 90px; /* space for sticky bottom bar */
     }
-
-    /* glass-morphism with neon edge */
-    .glass-card {
-      background: rgba(18, 22, 18, 0.8);
+    .glass {
+      background: rgba(255,255,255,0.05);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(22, 163, 74, 0.25);
-      border-radius: 28px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(22, 163, 74, 0.1) inset;
-      margin: 16px;
-      padding: 22px 18px;
-      transition: all 0.2s;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     }
-
-    .glass-card:hover {
-      border-color: #16a34a;
-      box-shadow: 0 12px 40px rgba(22, 163, 74, 0.15);
-    }
-
-    .green-text {
-      color: #22c55e;
-      text-shadow: 0 0 12px rgba(34, 197, 94, 0.3);
-    }
-
-    .btn-green {
-      background: linear-gradient(145deg, #16a34a, #0e7c34);
+    .gradient-primary {
+      background: linear-gradient(145deg, #0A84FF, #0066cc);
+      color: #fff;
       border: none;
-      color: white;
-      font-weight: 700;
-      padding: 18px 24px;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      letter-spacing: 0.8px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      text-decoration: none;
-      box-shadow: 0 10px 28px rgba(22, 163, 74, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
-      border: 1px solid rgba(255, 255, 255, 0.15);
     }
-
-    .btn-green:hover {
-      background: #15803d;
-      transform: scale(1.02) translateY(-2px);
-      box-shadow: 0 16px 36px rgba(22, 163, 74, 0.6);
-    }
-
-    .btn-whatsapp {
-      background: linear-gradient(145deg, #25D366, #1da85c);
+    .gradient-secondary {
+      background: linear-gradient(145deg, #00C853, #009624);
+      color: #fff;
       border: none;
-      color: white;
-      font-weight: 700;
-      padding: 18px 24px;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      letter-spacing: 0.8px;
-      cursor: pointer;
+    }
+    .btn-glow {
       transition: all 0.25s ease;
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      text-decoration: none;
-      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 15px rgba(10, 132, 255, 0.3);
     }
-
-    .btn-whatsapp:hover {
-      background: #1da85c;
-      transform: scale(1.02) translateY(-2px);
-      box-shadow: 0 16px 36px rgba(37, 211, 102, 0.5);
+    .btn-glow:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(10, 132, 255, 0.6);
     }
-
-    .dual-btn-group {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 12px;
+    .text-primary-custom { color: #0A84FF; }
+    .text-secondary-custom { color: #00C853; }
+    .bg-dark-card {
+      background: rgba(18, 22, 34, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.03);
     }
-
-    .dual-btn-group .btn-green,
-    .dual-btn-group .btn-whatsapp {
-      width: 100%;
+    .floating-ai {
+      position: absolute;
+      font-size: 6rem;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 0;
+      animation: floatGlow 12s infinite alternate ease-in-out;
     }
-
-    .sticky-buy {
-      position: sticky;
-      bottom: 16px;
-      z-index: 50;
-      margin: 0 16px 12px;
-      background: rgba(10, 14, 10, 0.85);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-radius: 60px;
-      padding: 8px 8px 8px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border: 1px solid #22c55e;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(34, 197, 94, 0.15);
+    @keyframes floatGlow {
+      0% { transform: translateY(0px) scale(1) rotate(0deg); opacity: 0.05; }
+      100% { transform: translateY(-40px) scale(1.1) rotate(6deg); opacity: 0.15; }
     }
-
-    .sticky-buy span {
-      font-weight: 800;
-      font-size: 1.6rem;
-      color: #22c55e;
-      letter-spacing: 0.5px;
-    }
-
-    .sticky-buy a {
-      background: linear-gradient(145deg, #16a34a, #0e7c34);
-      padding: 12px 28px;
-      border-radius: 40px;
-      color: white;
-      font-weight: 700;
-      text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.15);
-      transition: all 0.2s;
-      box-shadow: 0 4px 16px rgba(22, 163, 74, 0.4);
-    }
-
-    .sticky-buy a:hover {
-      background: #15803d;
-      transform: scale(1.03);
-    }
-
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 100px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
-      z-index: 100;
-      text-decoration: none;
-      transition: 0.2s;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.1) rotate(-4deg);
-    }
-
-    .countdown {
-      background: #151e15;
-      border-radius: 60px;
-      padding: 12px 20px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      color: #22c55e;
-      font-size: 1.6rem;
-      letter-spacing: 2px;
-      border: 1px solid rgba(34, 197, 94, 0.3);
-      box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
-      backdrop-filter: blur(4px);
-    }
-
-    .stars {
-      color: #fbbf24;
-      letter-spacing: 4px;
-      font-size: 1.2rem;
-    }
-
-    .check-list div {
-      padding: 6px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
-    }
-
-    .check-list i {
-      color: #22c55e;
-      margin-right: 12px;
-      width: 20px;
-      text-align: center;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid rgba(34, 197, 94, 0.15);
-      padding: 16px 0;
-    }
-
-    .faq-question {
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      color: #eaeaea;
-      font-size: 1.05rem;
-    }
-
-    .faq-answer {
-      max-height: 0;
+    .hero-section {
+      position: relative;
       overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      color: #b8c9b8;
-      margin-top: 0;
-      padding-left: 6px;
-    }
-
-    .faq-answer.open {
-      max-height: 160px;
-      margin-top: 12px;
-    }
-
-    .payment-badges span {
-      background: #1a221a;
-      padding: 6px 14px;
-      border-radius: 40px;
-      border: 1px solid rgba(34, 197, 94, 0.2);
-      margin: 0 6px 6px 0;
-      display: inline-block;
-      font-size: 0.75rem;
-      color: #b0c0b0;
-    }
-
-    .earnings-gallery {
+      min-height: 100vh;
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: center;
-      margin-top: 18px;
+      align-items: center;
+      background: radial-gradient(circle at 20% 30%, #0f1a2e, #070a12);
+      padding-top: 100px !important;
     }
-
-    .earnings-img {
-      width: 100%;
-      max-width: 140px;
+    .hero-section .container { position: relative; z-index: 2; }
+    .trust-badge {
+      background: rgba(0, 200, 83, 0.15);
+      padding: 0.4rem 1.2rem;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      border-left: 3px solid #00C853;
+    }
+    .icon-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.04);
       border-radius: 20px;
-      border: 2px solid #22c55e;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.7), 0 0 0 1px rgba(34, 197, 94, 0.2);
-      transition: all 0.3s ease;
-      background: #141c14;
-      object-fit: cover;
-      aspect-ratio: 1 / 1.2;
+      padding: 1.5rem 1rem;
+      transition: 0.3s;
+      height: 100%;
     }
-
-    .earnings-img:hover {
-      transform: scale(1.04) translateY(-4px);
-      border-color: #4ade80;
-      box-shadow: 0 16px 36px rgba(34, 197, 94, 0.3);
+    .icon-card:hover {
+      transform: translateY(-8px);
+      background: rgba(10, 132, 255, 0.08);
+      border-color: #0A84FF;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
-
-    @media (max-width: 400px) {
-      .glass-card {
-        margin: 10px;
-        padding: 16px;
-      }
-      .earnings-img {
-        max-width: 110px;
-      }
+    .icon-card i { font-size: 2.4rem; color: #0A84FF; }
+    .timeline-step {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 3px solid #0A84FF;
+      margin-bottom: 2.2rem;
     }
-
-    /* glowing gradient text */
-    .gradient-headline {
-      background: linear-gradient(135deg, #f0faf0, #86efac, #22c55e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 800;
-    }
-
-    .badge-pill {
-      background: #1a2a1a;
-      border-radius: 40px;
-      padding: 4px 16px;
-      display: inline-block;
+    .timeline-step:last-child { border-left: 3px solid transparent; }
+    .timeline-step .step-number {
+      position: absolute;
+      left: -14px;
+      top: -6px;
+      background: #0A84FF;
+      width: 28px;
+      height: 28px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 0.8rem;
-      border: 1px solid #22c55e;
-      color: #86efac;
+      font-weight: 700;
     }
+    .testimonial-card {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 24px;
+      padding: 1.8rem 1.5rem;
+      transition: 0.3s;
+    }
+    .testimonial-card:hover { background: rgba(10, 132, 255, 0.06); }
+    .testimonial-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 3px solid #0A84FF;
+    }
+    .pricing-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(10, 132, 255, 0.2);
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .pricing-card .price { font-size: 3.8rem; font-weight: 700; color: #00C853; }
+    .nav-sticky {
+      background: rgba(11, 13, 21, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      transition: 0.3s;
+      position: relative;
+      z-index: 999;
+    }
+    .nav-sticky .navbar-brand { font-weight: 700; letter-spacing: -0.3px; }
+    .section-title {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      position: relative;
+    }
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #0A84FF, #00C853);
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    .faq-item {
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #0A84FF;
+    }
+    .footer-links a {
+      color: #aab;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+    .footer-links a:hover { color: #0A84FF; }
+    .counter-number {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #0A84FF;
+    }
+    /* result screenshot cards */
+    .result-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .result-card:hover { transform: scale(1.01); border-color: #0A84FF; }
+    .result-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .result-card .card-body { padding: 1rem 1.2rem; }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #000;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    /* student testimonial picture cards (4-up) */
+    .testimonial-pic-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .testimonial-pic-card:hover { transform: translateY(-6px); border-color: #0A84FF; }
+    .testimonial-pic-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .testimonial-pic-card .card-body { padding: 1rem; }
+    /* STICKY COUNTDOWN BAR - fixed at top */
+    .countdown-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #0A84FF, #00C853);
+      padding: 10px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      z-index: 9999;
+      box-shadow: 0 2px 20px rgba(10, 132, 255, 0.3);
+    }
+    .countdown-bar .countdown-timer {
+      background: rgba(0,0,0,0.3);
+      padding: 4px 18px;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 700;
+      color: #fff;
+    }
+    /* Navbar now sits below countdown */
+    .nav-sticky {
+      margin-top: 52px; /* height of countdown bar */
+    }
+    /* Sticky bottom bar */
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 13, 21, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 12px 0;
+      z-index: 9999;
+      transition: 0.3s;
+    }
+    .sticky-bottom-bar .btn {
+      font-weight: 600;
+      padding: 10px 28px;
+      border-radius: 60px;
+      font-size: 0.95rem;
+    }
+    .sticky-bottom-bar .price-tag {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #00C853;
+      margin-right: 12px;
+    }
+    @media (max-width: 576px) {
+      .sticky-bottom-bar .btn { font-size: 0.8rem; padding: 8px 16px; }
+      .sticky-bottom-bar .price-tag { font-size: 1rem; }
+      .countdown-bar { font-size: 0.8rem; padding: 8px 0; }
+      body { padding-bottom: 80px; }
+      .nav-sticky { margin-top: 44px; }
+    }
+    #loader {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: #0b0d15;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      transition: opacity 0.6s;
+    }
+    #loader.hidden { opacity: 0; pointer-events: none; }
+    .loader-spinner {
+      width: 48px;
+      height: 48px;
+      border: 5px solid rgba(10,132,255,0.2);
+      border-top: 5px solid #0A84FF;
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- LOADER -->
+  <div id="loader"><div class="loader-spinner"></div></div>
 
-    <!-- HERO SECTION -->
-    <section class="glass-card" style="margin-top: 20px; text-align: center; background: radial-gradient(circle at 20% 30%, #112011, #0a0e0a);">
-      <span class="badge-pill"><i class="fas fa-rocket green-text"></i> LIVE + BONUS</span>
-      <h1 style="font-size: 2.4rem; font-weight: 800; line-height: 1.2; margin-top: 10px;" class="gradient-headline">Create & Sell Digital Products with AI</h1>
-      <p style="color: #cbd5c1; margin: 14px 0; font-size: 1.05rem;">Build a profitable online business from your phone — zero experience needed.</p>
-      <p style="font-weight: 600; background: #1a2a1a; padding: 12px 16px; border-radius: 40px; margin: 16px 0; border-left: 4px solid #22c55e;">🔥 Stop watching others win. Start building your own empire.</p>
-      <p style="font-size: 0.95rem; color: #b8c9b8;">Inside: AI-powered product creation, sales website, Facebook & TikTok ads – everything you need to make ₦100k–₦500k/month.</p>
-      
-      <div style="font-size: 48px; font-weight: 900; color: #22c55e; margin: 20px 0 8px; text-shadow: 0 0 30px rgba(34,197,94,0.3);">₦1,500</div>
-      
-      <!-- DUAL BUTTONS: WhatsApp (tracks Lead) + Payment (tracks Purchase) -->
-      <div class="dual-btn-group">
-        <!-- WhatsApp button tracks LEAD (but text is clean) -->
-        <a href="https://wa.link/hu7xp3" class="btn-whatsapp" target="_blank" onclick="trackLead('Hero WhatsApp')">
-          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-        </a>
-        <!-- Payment button tracks PURCHASE (but text is clean) -->
-        <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" onclick="trackPurchase('Hero Payment')">
-          <i class="fas fa-bolt"></i> Get Instant Access
-        </a>
-      </div>
-      
-      <div class="stars" style="margin-top: 16px;">⭐⭐⭐⭐⭐</div>
-      <p style="font-size: 0.85rem; color: #9aaa9a; margin-top: 14px;">Stop scrolling, start selling. This course shows you exactly how I built a ₦1M/month digital product business. Trusted by hundreds of students.</p>
-    </section>
+  <!-- STICKY COUNTDOWN TIMER BAR (30 minutes) - FIXED AT TOP -->
+  <div class="countdown-bar">
+    <div class="container">
+      <span>⏳ <strong>Limited Time Offer!</strong> Enroll Now &nbsp;—&nbsp; </span>
+      <span class="countdown-timer" id="countdownDisplay">30:00</span>
+      <span class="ms-2">minutes remaining</span>
+    </div>
+  </div>
 
-    <!-- PERSONAL EARNINGS PROOF -->
-    <section class="glass-card">
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-        <i class="fas fa-chart-line green-text" style="font-size: 2rem;"></i>
-        <h2 style="font-size: 1.7rem;">My Real Results</h2>
+  <!-- NAVIGATION (now below countdown) -->
+  <nav class="navbar navbar-expand-lg nav-sticky py-3">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>PROMISETECH</a>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2 align-items-center">
+          <li class="nav-item"><a class="nav-link text-white-50" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#video">Video Proof</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="btn btn-sm gradient-primary btn-glow px-4 rounded-pill text-white" href="#cta"><i class="fas fa-rocket me-1"></i>Enroll</a></li>
+        </ul>
       </div>
-      <p style="color: #cbd5c1;">Actual earnings from selling the course I created using this system.</p>
-      <div class="earnings-gallery">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_N0XYTfTWRaPWX1WUoJvKjUc0maY50OQmMYnYpOssu-zPiu4N_DixVwZFj03kg1C6J5ld7BEHMgcBpmExPNncramycBY7KRY8XV2keEJuo83oEiCuHsAX_N0YTQBDQ-gOxsVbMkZ4ayl-Z2qRMK8OjOW3X8QvpV7cmxvDDuhtx48myXrq613lz0b2ioA/s1200/john-ibukun1n-a-1749205253-jpg-selar.com-20250606102053.jpg" alt="earnings proof 1" class="earnings-img" loading="lazy">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYxaMccV4kHBynrt__sBUscqvtKrVb2b1nfzQeFwtnaKRKrtYWt-8ukhbbkbRCp5NopLDQgxNb9Y8RYFT_cikFsX_2KJp6S5iA9tzF1HL9LtLdyfcalrUZEa_MrfXhlb9S6Lurz5tRBXuLOjGiPifZVg_SnXAkpS1cahBOZoD4PRpueYkIiRA8YPmCiwE/s1200/john-ibukun1n-a-1749434468-jpg-selar.com-20250609020108.jpg" alt="earnings proof 2" class="earnings-img" loading="lazy">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigheoZcbVMGtYTLEF4k6fwvPkPuVR13ZIsQgeaxMniwxE6MoE7ribcuYBTsAIcqSzLHbpRmh407YG5iWCswG6tynAOllMAnJwDn8-ePRDkdIkdcZ56etmkp8X3CukZN1g7LMgQC1EhNISnMqz1aEw11UAIa9IpnroyLH0Dc7RlrJGEb9q7jaavElbL_TE/s488/john-ibukun1n-a-1749243685-jpg-selar.com-20250606090125.jpg" alt="earnings proof 3" class="earnings-img" loading="lazy">
-      </div>
-      <p style="font-size:0.75rem; color:#7a8a7a; margin-top:14px; text-align:center; border-top: 1px solid #1e2a1e; padding-top: 12px;">💰 Real screenshots from Selar – this can be you.</p>
-    </section>
+    </div>
+  </nav>
 
-    <!-- WHY THIS COURSE -->
-    <section class="glass-card">
-      <h2 style="font-size: 1.8rem; margin-bottom: 6px;">Why This Course?</h2>
-      <p style="color: #cbd5c1;">Most people spend years promoting other people's products.</p>
-      <p style="font-weight: 700; margin: 10px 0; font-size: 1.2rem;">Instead, create something that <span class="green-text">belongs to you.</span></p>
-      <div class="check-list" style="margin-top: 14px;">
-        <div><i class="fas fa-check-circle"></i> Your pricing, your brand</div>
-        <div><i class="fas fa-check-circle"></i> Your customers, your business</div>
-        <div><i class="fas fa-check-circle"></i> 100% ownership</div>
-      </div>
-    </section>
-
-    <!-- MODULES -->
-    <section class="glass-card">
-      <h2 style="font-size: 1.8rem;">What You'll Learn</h2>
-      <div style="margin-top: 16px;">
-        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
-          <h3 class="green-text"><i class="fas fa-robot"></i> Module 1</h3>
-          <p><strong>Create Digital Products with AI</strong></p>
-          <div class="check-list" style="margin-top: 6px;">
-            <div><i class="fas fa-check"></i> eBooks, Courses, PDFs</div>
-            <div><i class="fas fa-check"></i> Templates & Checklists</div>
-            <div><i class="fas fa-check"></i> No design/writing skills needed</div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="floating-ai" style="top:10%; right:5%;"><i class="fas fa-microchip"></i></div>
+    <div class="floating-ai" style="bottom:15%; left:3%; font-size:4rem;"><i class="fas fa-robot"></i></div>
+    <div class="container pt-5 mt-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-bold lh-1 mb-4">Become a Certified Affiliate Marketer & AI Digital Product Creator</h1>
+          <p class="lead text-white-50 mb-4">Learn how to create a 1 MILLION NAIRA PER MONTH digital products with free AI tools, build professional websites, create high-converting landing pages, run Facebook Ads, and sell online—even if you're starting from scratch.</p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <span class="trust-badge"><i class="fas fa-check-circle text-secondary-custom me-2"></i>Beginner Friendly</span>
+            <span class="trust-badge"><i class="fas fa-infinity text-secondary-custom me-2"></i>Lifetime Access</span>
+            <span class="trust-badge"><i class="fas fa-mobile-alt text-secondary-custom me-2"></i>Learn From Phone or Laptop</span>
+            <span class="trust-badge"><i class="fas fa-tools text-secondary-custom me-2"></i>Practical Training</span>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#cta" class="btn gradient-primary btn-glow px-5 py-3 rounded-pill fw-semibold" onclick="fbq('track', 'Lead');"><i class="fas fa-user-graduate me-2"></i>Enroll Now</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light px-5 py-3 rounded-pill fw-semibold border-2" onclick="fbq('track', 'Lead');"><i class="fab fa-telegram me-2"></i>Contact Us on Telegram</a>
           </div>
         </div>
-        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
-          <h3 class="green-text"><i class="fas fa-laptop-code"></i> Module 2</h3>
-          <p><strong>Build Your Sales Website</strong> – No code, drag & drop.</p>
-        </div>
-        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
-          <h3 class="green-text"><i class="fab fa-facebook"></i> Module 3</h3>
-          <p><strong>Facebook Ads</strong> – Target buyers & scale.</p>
-        </div>
-        <div style="margin-bottom: 18px; background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
-          <h3 class="green-text"><i class="fab fa-tiktok"></i> Module 4</h3>
-          <p><strong>TikTok Marketing</strong> – Viral videos + paid promotions.</p>
-        </div>
-        <div style="background: #111811; padding: 14px; border-radius: 20px; border-left: 4px solid #22c55e;">
-          <h3 class="green-text"><i class="fas fa-bolt"></i> Module 5</h3>
-          <p><strong>AI Productivity Tools</strong> – Automate & save time.</p>
+        <div class="col-lg-5 d-none d-lg-block text-center">
+          <div class="glass p-4 position-relative">
+            <i class="fas fa-laptop-code" style="font-size: 8rem; color: #0A84FF; opacity: 0.5;"></i>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <span class="badge bg-primary bg-opacity-25 p-3 rounded-pill"><i class="fas fa-sparkles me-1"></i> AI-Powered</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- STUDENT LOVE -->
-    <section class="glass-card">
-      <h2 style="font-size: 1.6rem;">Why Students Love This</h2>
-      <div class="check-list" style="margin-top: 12px;">
-        <div><i class="fas fa-check-circle"></i> Beginner friendly</div>
-        <div><i class="fas fa-check-circle"></i> Step-by-step videos</div>
-        <div><i class="fas fa-check-circle"></i> Lifetime access</div>
-        <div><i class="fas fa-check-circle"></i> Mobile friendly</div>
-        <div><i class="fas fa-check-circle"></i> Practical & actionable</div>
+  <!-- YOUTUBE VIDEO PROOF -->
+  <section id="video" class="py-5">
+    <div class="container">
+      <div class="glass p-4 p-md-5">
+        <h2 class="section-title mb-3">🔥 Live Video Proof: How I Made 31 Million Naira</h2>
+        <p class="text-white-50 mb-4">Watch this real video testimonial where I break down exactly how I generated 31 million naira using the strategies taught inside PromiseTech Academy.</p>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/HQERmcNkdms?si=DUxqseT1g659pMmV" allowfullscreen></iframe>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- IS THIS FOR YOU + INCLUDES -->
-    <section class="glass-card">
-      <h3>Is This For You?</h3>
-      <div class="check-list" style="margin: 12px 0 18px;">
-        <div><i class="fas fa-check"></i> You want to build an online business</div>
-        <div><i class="fas fa-check"></i> You want to learn digital skills</div>
-        <div><i class="fas fa-check"></i> You want to create your own products</div>
-        <div><i class="fas fa-check"></i> You have a smartphone or laptop</div>
+  <!-- CALL TO ACTION + PRICING -->
+  <section id="cta" class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold display-6">Ready To Become A Digital Marketing Professional?</h2>
+        <p class="text-white-50 mb-5">Join hundreds of students learning practical digital marketing skills with PROMISETECH ACADEMY.</p>
+        <div class="pricing-card">
+          <h5 class="text-uppercase text-secondary-custom">Student Account Activation</h5>
+          <div class="price">₦3,000</div>
+          <ul class="list-unstyled mt-3 text-start">
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Lifetime Course Access</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Student Dashboard</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Learning Resources</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Future Updates</li>
+          </ul>
+          <div class="d-grid gap-3 mt-4">
+            <a href="https://flutterwave.com/pay/prkzhgrsm3xl" target="_blank" class="btn gradient-primary btn-glow py-3 rounded-pill fw-bold" onclick="fbq('track', 'Purchase', {value: 3000, currency: 'NGN'});"><i class="fas fa-rocket me-2"></i> Activate Student Account</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light py-3 rounded-pill" onclick="fbq('track', 'Lead');"><i class="fab fa-telegram me-2"></i> Contact Us on Telegram</a>
+          </div>
+        </div>
       </div>
-      <h3>Course Includes</h3>
-      <p style="margin: 4px 0;"><i class="fas fa-video green-text"></i> 📚 Full Video Training</p>
-      <p style="margin: 4px 0;"><i class="fas fa-file-download green-text"></i> 📄 Downloadable Resources</p>
-      <p style="margin: 4px 0;"><i class="fas fa-gift green-text"></i> 🎁 Bonus Materials</p>
-      <p style="margin: 4px 0;"><i class="fas fa-sync-alt green-text"></i> 🔄 Lifetime Updates</p>
-      <p style="margin: 4px 0;"><i class="fas fa-mobile-alt green-text"></i> 📱 Mobile Access</p>
-    </section>
+    </div>
+  </section>
+  
+  <!-- STUDENT TESTIMONIAL PICTURE SPOTS (4) -->
+  <section id="student-pics" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Student Testimonial Gallery <span class="text-secondary-custom">📸</span></h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQsVd1937yyXHSLC1TTLNxdmDmSWL95l0Ho6lK_frrFwZsc7SN27UMXPs2XHgVx0WLBH6ZWM6e9u6bx4XQXk8BVlcDsHgelAx33SAluss-TpFZwfbvToLcEK5AYPPnvE5TzPGPzNDOEJUgcPnry1Z6ucAcAHQu5UMjBOswfYZit3dsJ72vWq6vtaSCeuY/s5472/elizeu-dias-2EGNqazbAMk-unsplash.jpg" alt="student testimonial 1"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> “Life-changing training!”</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV-JLBpe9GDx4ZnhV1Cmmg-MVsSYTTSvHPkCW38QpofgPppEHB5aimrioxRKb2NuJLxknS6K9_8yz33PSVBa_3Q5ywZLeiCifWRdF3Nbms73tnsQKPXQ3eX_5696Ar25idKzHvCKn5qY3LzWE8-CebuIsOXERokuGMJ4-r-v8iBAlKilImsnAcEOKckVA/s5616/gift-habeshaw-B1ZnssAW8CI-unsplash.jpg" alt="student testimonial 2"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> “I launched my own agency.”</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgchpurCsroTU-F0qGogLQHdNMDvOarXMIj8dTcuugelowzJCvOwGFuYZRHi-hMpthT3bEzJ1XspVUGsnbIUomDb3HnQZBJsm6ylYY_fjP23j94HJ6OCdHBM2JGWbIEbX2mEbpVoYZIC3zN-Tiw6XDJLFnLZSPTPmCDfx_sBxEjjbjxJpCGUBakcjOKR6o/s5760/gift-habeshaw-KBv5dEN3QtY-unsplash.jpg" alt="student testimonial 3"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> “Best investment in my career.”</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="student testimonial 4"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> “From zero to sales in weeks.”</p></div></div></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- STUDENT FEEDBACK -->
-    <section class="glass-card">
-      <h2>Student Feedback</h2>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 16px; background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "The lessons were easy to follow and helped me understand digital products."</div>
-        <div style="margin-bottom: 16px; background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "I built my first website after completing the training."</div>
-        <div style="background: #111811; padding: 12px 16px; border-radius: 20px;">⭐⭐⭐⭐⭐ <br> "The Facebook advertising section was especially useful."</div>
+  <!-- ADMISSION NOTICE -->
+  <section class="py-5">
+    <div class="container">
+      <div class="glass p-4 p-md-5 row g-4 align-items-center">
+        <div class="col-md-8">
+          <h3 class="fw-bold"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>🎓 2026 Student Registration Is Now Open</h3>
+          <p class="text-white-50">Applications are currently open for new students joining PROMISETECH ACADEMY. To activate your student account and gain access to the learning portal, an <strong class="text-secondary-custom">Activation Fee of ₦3,000</strong> is required. After successful activation, you'll receive your student dashboard, learning materials, and course access instructions.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <span class="badge bg-success bg-opacity-25 text-success p-3 fs-6 rounded-pill"><i class="fas fa-check-circle me-1"></i> Admission Status: OPEN</span>
+        </div>
       </div>
-      <p style="font-size:0.7rem; color:#6a7a6a; margin-top:14px;">(real students, real results)</p>
-    </section>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section class="glass-card">
-      <h2 style="margin-bottom: 12px;">Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)">Do I need experience? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">No. Everything is explained from scratch.</div>
+  <!-- WHAT YOU WILL LEARN -->
+  <section id="courses" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">What You Will Learn</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-bullseye mb-2"></i><h6 class="fw-semibold">Module 1</h6><p class="small text-white-50">Affiliate Marketing From Scratch</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-robot mb-2"></i><h6 class="fw-semibold">Module 2</h6><p class="small text-white-50">AI Digital Product Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-globe mb-2"></i><h6 class="fw-semibold">Module 3</h6><p class="small text-white-50">Website Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-paint-brush mb-2"></i><h6 class="fw-semibold">Module 4</h6><p class="small text-white-50">Landing Page Design</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fab fa-facebook mb-2"></i><h6 class="fw-semibold">Module 5</h6><p class="small text-white-50">Facebook Advertising</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fab fa-tiktok mb-2"></i><h6 class="fw-semibold">Module 6</h6><p class="small text-white-50">TikTok Advertising</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-funnel-dollar mb-2"></i><h6 class="fw-semibold">Module 7</h6><p class="small text-white-50">Sales Funnel Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-video mb-2"></i><h6 class="fw-semibold">Module 8</h6><p class="small text-white-50">AI Video Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-chart-line mb-2"></i><h6 class="fw-semibold">Module 9</h6><p class="small text-white-50">Campaign Tracking</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-rocket mb-2"></i><h6 class="fw-semibold">Module 10</h6><p class="small text-white-50">Scaling Your Online Business</p></div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)">Can I use my phone? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">Yes. Most of the course can be followed using a smartphone.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)">How long do I have access? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">Lifetime.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)">How do I receive the course? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">Immediately after payment.</div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PRICE + COUNTDOWN + DUAL BUTTONS AGAIN -->
-    <section class="glass-card" style="text-align: center; background: radial-gradient(circle at 50% 20%, #142014, #0a0e0a);">
-      <div style="text-decoration: line-through; color: #7a8a7a; font-size: 1.2rem;">₦10,000</div>
-      <div style="font-size: 3rem; font-weight: 900; color: #22c55e; text-shadow: 0 0 40px rgba(34,197,94,0.2);">Today Only ₦1,500</div>
-      <div class="countdown" id="countdownTimer" style="margin: 18px 0;">
-        <i class="fas fa-clock green-text"></i> <span id="timerDisplay">09:59</span>
+  <!-- WHY STUDY WITH US + REGISTRATION PROCESS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="section-title mb-4">Why Study With Us</h2>
+          <div class="row g-3">
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-chalkboard-teacher"></i><p class="fw-semibold mt-2 mb-0">Expert-Led Training</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-infinity"></i><p class="fw-semibold mt-2 mb-0">Lifetime Access</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-smile"></i><p class="fw-semibold mt-2 mb-0">Beginner Friendly</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-project-diagram"></i><p class="fw-semibold mt-2 mb-0">Real Projects</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-mobile-alt"></i><p class="fw-semibold mt-2 mb-0">Mobile Learning</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-certificate"></i><p class="fw-semibold mt-2 mb-0">Certificate</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-users"></i><p class="fw-semibold mt-2 mb-0">Private Community</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-sync-alt"></i><p class="fw-semibold mt-2 mb-0">Free Updates</p></div></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title mb-4">Student Registration Process</h2>
+          <div class="timeline-step"><span class="step-number">1</span><h6>Complete Registration</h6></div>
+          <div class="timeline-step"><span class="step-number">2</span><h6>Activate Student Account</h6><span class="badge bg-secondary-custom bg-opacity-25 text-secondary-custom px-3 py-2 rounded-pill">Activation Fee: ₦3,000</span></div>
+          <div class="timeline-step"><span class="step-number">3</span><h6>Receive Login Details</h6></div>
+          <div class="timeline-step"><span class="step-number">4</span><h6>Access Student Dashboard</h6></div>
+          <div class="timeline-step"><span class="step-number">5</span><h6>Start Learning</h6></div>
+        </div>
       </div>
-      
-      <!-- DUAL BUTTONS (bottom) with clean text -->
-      <div class="dual-btn-group">
-        <a href="https://wa.link/hu7xp3" class="btn-whatsapp" target="_blank" onclick="trackLead('Bottom WhatsApp')">
-          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-        </a>
-        <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" onclick="trackPurchase('Bottom Payment')">
-          <i class="fas fa-shopping-cart"></i> BUY NOW – ₦1,500
-        </a>
-      </div>
-      
-      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 18px; flex-wrap: wrap;">
-        <span><i class="fas fa-lock green-text"></i> Secure Checkout</span>
-        <span><i class="fas fa-bolt green-text"></i> Instant Access</span>
-        <span><i class="fas fa-headset green-text"></i> Support</span>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <div style="padding: 20px 16px; text-align: center; font-size: 0.8rem; color: #6a7a6a;">
-      <div class="payment-badges" style="margin-bottom: 14px;">
-        <span><i class="fas fa-shield-alt green-text"></i> Flutterwave</span>
-        <span><i class="fas fa-lock green-text"></i> Secure Payment</span>
-        <span><i class="fas fa-truck green-text"></i> Instant Delivery</span>
+  <!-- COURSE BENEFITS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Course Benefits</h2>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-map-pin"></i><p class="fw-semibold mt-2">Learn From Anywhere</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-code"></i><p class="fw-semibold mt-2">No Coding Required</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-brain"></i><p class="fw-semibold mt-2">AI Tools Included</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fab fa-facebook"></i><p class="fw-semibold mt-2">Facebook Ads Strategy</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-file-code"></i><p class="fw-semibold mt-2">Website Templates</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-file-alt"></i><p class="fw-semibold mt-2">Landing Page Templates</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-bullhorn"></i><p class="fw-semibold mt-2">Marketing Resources</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-sync-alt"></i><p class="fw-semibold mt-2">Lifetime Updates</p></div></div>
       </div>
-      <p>© 2026 PromiseTech247</p>
+    </div>
+  </section>
+
+  <!-- STUDENT REAL RESULT SCREENSHOTS (4) -->
+  <section id="results" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Student Real Results <span class="text-secondary-custom">📈</span></h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_N0XYTfTWRaPWX1WUoJvKjUc0maY50OQmMYnYpOssu-zPiu4N_DixVwZFj03kg1C6J5ld7BEHMgcBpmExPNncramycBY7KRY8XV2keEJuo83oEiCuHsAX_N0YTQBDQ-gOxsVbMkZ4ayl-Z2qRMK8OjOW3X8QvpV7cmxvDDuhtx48myXrq613lz0b2ioA/s1200/john-ibukun1n-a-1749205253-jpg-selar.com-20250606102053.jpg" alt="student result 1"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-trophy text-secondary-custom me-1"></i> Affiliate commission</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTejEzn7R6Ne2v-fk_2O6Oj69bx7W6LHRvM-J7IH-1iPXGTHFNJel1y2l7dGE0kdHS-0ljkp9-UWXkY6zYY00ldRol0468J9SCfuKZ7l5u7K_eaBcndP4QZIN8M1MUGhK5MU-rs0RM4DgGcvChh8bIbc_WZgCJtrgaHZZNL12HM1kJAXlCk0098tSGBno/s1280/WhatsApp%20Image%202026-08-06%20at%2011.32.42%20PM.jpeg" alt="student result 2"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-chart-line text-secondary-custom me-1"></i> Sales dashboard</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8N1wRKKdPsp_1P6PE-S5y1a1pxtLCHBbLJ_tWvfdMY2YBuA6aFT8PoWnI7vcE9aZrqztZSkyG6n_7hqKy-AUbH1m7okl3c2IpYG3KDaBShaMH7uiUMY8ErcvYOOpVINvWsRjjx-MPZjkXtwcxFb1xnzod2z2JVqss-wWalMM1-btuUa4JfqP5Zrm5wKs/s1184/WhatsApp%20Image%202026-08-06%20at%2011.32.44%20PM.jpeg" alt="student result 3"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-rocket text-secondary-custom me-1"></i> Digital product sales</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAOb6A0bBNtav-PTNCalRxEq0YN9X9gi-1SwGJfYG2ppz4D3bdRETPpWZQTkIhWXIIlDqKiJ-syZ_J3r6spXMxDYOdtoOdCpCtZXZW6g2WoFbrv3jvNASNROfUqrmrsWmPR1n8Pei4rvhoBxpZNYVhYAbzx5qFXEkffvPYiGEnRjZsxbfXNX7-u9QO9Bc/s1145/WhatsApp%20Image%202026-08-06%20at%2011.32.52%20PM.jpeg" alt="student result 4"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-dollar-sign text-secondary-custom me-1"></i> Revenue milestone</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">What Our Foreign Students Says</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="student"><div><h6 class="mb-0">Chidi O.</h6><small class="text-white-50">Digital Marketer</small></div></div><p class="small text-white-50">“Practical training that actually works. I built my first landing page in 2 days. The AI tools module was a game changer.”</p></div></div>
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="student"><div><h6 class="mb-0">Amina K.</h6><small class="text-white-50">Content Creator</small></div></div><p class="small text-white-50">“The structured lessons helped me understand sales funnels and Facebook ads. I feel confident to start my own agency.”</p></div></div>
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="student"><div><h6 class="mb-0">Tunde A.</h6><small class="text-white-50">Entrepreneur</small></div></div><p class="small text-white-50">“The community and lifetime access are amazing. I've learned practical skills without any coding background.”</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+      <div class="faq-item"><h6><i class="fas fa-question-circle text-primary-custom me-2"></i>What is PROMISETECH ACADEMY?</h6><p class="small text-white-50">An online academy that teaches affiliate marketing, AI product creation, and digital business skills.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-user-plus text-primary-custom me-2"></i>Who can enroll?</h6><p class="small text-white-50">Anyone interested in digital marketing, from beginners to intermediate learners.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-question text-primary-custom me-2"></i>Do I need experience?</h6><p class="small text-white-50">No, the training is beginner-friendly and covers everything from scratch.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-key text-primary-custom me-2"></i>How do I activate my account?</h6><p class="small text-white-50">Pay the activation fee of ₦3,000 to unlock your dashboard and materials.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-clock text-primary-custom me-2"></i>When do I receive access?</h6><p class="small text-white-50">Immediately after successful activation, you'll get login details.</p></div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION + PRICING -->
+  <section id="cta" class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold display-6">Ready To Become A Digital Marketing Professional?</h2>
+        <p class="text-white-50 mb-5">Join hundreds of students learning practical digital marketing skills with PROMISETECH ACADEMY.</p>
+        <div class="pricing-card">
+          <h5 class="text-uppercase text-secondary-custom">Student Account Activation</h5>
+          <div class="price">₦3,000</div>
+          <ul class="list-unstyled mt-3 text-start">
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Lifetime Course Access</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Student Dashboard</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Learning Resources</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Future Updates</li>
+          </ul>
+          <div class="d-grid gap-3 mt-4">
+            <a href="https://flutterwave.com/pay/prkzhgrsm3xl" target="_blank" class="btn gradient-primary btn-glow py-3 rounded-pill fw-bold" onclick="fbq('track', 'Purchase', {value: 3000, currency: 'NGN'});"><i class="fas fa-rocket me-2"></i> Activate Student Account</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light py-3 rounded-pill" onclick="fbq('track', 'Lead');"><i class="fab fa-telegram me-2"></i> Contact Us on Telegram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-5 border-top border-secondary border-opacity-10">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>PROMISETECH ACADEMY</h5>
+          <p class="text-white-50 small">Learn Today • Build Tomorrow • Grow Forever</p>
+        </div>
+        <div class="col-md-8 footer-links d-flex flex-wrap justify-content-md-end gap-3">
+          <a href="#">About</a> <a href="#">Courses</a> <a href="#">Admissions</a> <a href="#">Contact</a> <a href="#">Telegram</a> <a href="#">Privacy</a> <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="text-center text-white-50 small mt-4 pt-3 border-top border-secondary border-opacity-10">Copyright © 2026 PROMISETECH ACADEMY</div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM BAR -->
+  <div class="sticky-bottom-bar">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-6 col-md-4">
+          <span class="price-tag"><i class="fas fa-tag me-1"></i>₦3,000</span>
+          <span class="text-white-50 small d-none d-sm-inline">Activation Fee</span>
+        </div>
+        <div class="col-6 col-md-8 text-end">
+          <a href="https://flutterwave.com/pay/prkzhgrsm3xl" target="_blank" class="btn gradient-primary btn-glow" onclick="fbq('track', 'Purchase', {value: 3000, currency: 'NGN'});">
+            <i class="fas fa-user-plus me-2"></i>Become Our Student Today
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- STICKY BUY (tracks Purchase) -->
-  <div class="sticky-buy" id="stickyBar">
-    <span>₦1,500</span>
-    <a href="https://flutterwave.com/pay/prkzhgrsm3xl" onclick="trackPurchase('Sticky Bar')">Buy Now</a>
-  </div>
-
-  <!-- FLOATING WHATSAPP (tracks Lead) -->
-  <a href="https://wa.link/hu7xp3" class="floating-whatsapp" title="Chat on WhatsApp" onclick="trackLead('Floating WhatsApp')">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- EXIT POPUP (tracks Purchase) -->
-  <div id="exitPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); backdrop-filter:blur(12px); z-index:200; align-items:center; justify-content:center;">
-    <div style="background:#0f150f; border:1px solid #22c55e; border-radius:32px; padding:28px 22px; max-width:320px; text-align:center; margin:20px; box-shadow: 0 24px 60px rgba(0,0,0,0.8);">
-      <h3 style="color:#22c55e; font-size: 1.6rem;">⏳ Wait!</h3>
-      <p style="margin:14px 0; color:#d0e0d0;">Get the course now for <strong>₦1,500</strong> instead of ₦10,000.</p>
-      <a href="https://flutterwave.com/pay/prkzhgrsm3xl" class="btn-green" style="display:block; margin-top:16px;" 
-         onclick="trackPurchase('Exit Popup'); document.getElementById('exitPopup').style.display='none'">
-        <i class="fas fa-gem"></i> Get Instant Access
-      </a>
-      <button onclick="document.getElementById('exitPopup').style.display='none'" style="background:none; border:none; color:#8a9a8a; margin-top:16px; cursor:pointer; font-size:0.9rem;">No thanks, I'll miss out</button>
-    </div>
-  </div>
-
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // ✅ FACEBOOK PIXEL TRACKING: LEAD events for WhatsApp buttons
-    function trackLead(location) {
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead', {
-          content_name: 'Digital Products Course - WhatsApp Lead',
-          content_category: 'Online Course',
-          cta_location: location,
-          currency: 'NGN'
-        });
-        console.log('✅ LEAD tracked from: ' + location);
+    // Hide loader
+    window.addEventListener('load', function() {
+      document.getElementById('loader').classList.add('hidden');
+    });
+
+    // Countdown timer (30 minutes)
+    let totalSeconds = 30 * 60;
+    const display = document.getElementById('countdownDisplay');
+
+    function updateCountdown() {
+      const mins = Math.floor(totalSeconds / 60);
+      const secs = totalSeconds % 60;
+      display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      if (totalSeconds <= 0) {
+        clearInterval(countdownInterval);
+        display.textContent = '00:00';
       } else {
-        console.warn('⚠️ Pixel not loaded');
+        totalSeconds--;
       }
     }
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
 
-    // ✅ FACEBOOK PIXEL TRACKING: PURCHASE events for payment buttons
-    function trackPurchase(location) {
-      if (typeof fbq === 'function') {
-        fbq('track', 'Purchase', {
-          content_name: 'Digital Products Course',
-          content_category: 'Online Course',
-          value: 1500,
-          currency: 'NGN',
-          cta_location: location
-        });
-        console.log('✅ PURCHASE tracked from: ' + location);
-      } else {
-        console.warn('⚠️ Pixel not loaded');
-      }
-    }
-
-    // FAQ toggle
-    function toggleFAQ(element) {
-      const answer = element.nextElementSibling;
-      const icon = element.querySelector('i');
-      if (answer.classList.contains('open')) {
-        answer.classList.remove('open');
-        icon.className = 'fas fa-chevron-down';
-      } else {
-        answer.classList.add('open');
-        icon.className = 'fas fa-chevron-up';
-      }
-    }
-
-    // Countdown (30 min)
-    function startCountdown(durationInSeconds) {
-      const display = document.getElementById('timerDisplay');
-      let timer = durationInSeconds, minutes, seconds;
-      const interval = setInterval(() => {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = minutes + ":" + seconds;
-        if (--timer < 0) {
-          clearInterval(interval);
-          display.textContent = "00:00";
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 1000);
-    }
-    startCountdown(1800);
-
-    // Exit intent
-    document.addEventListener('mouseout', function(e) {
-      if (e.clientY < 10 && !e.relatedTarget && !e.toElement) {
-        document.getElementById('exitPopup').style.display = 'flex';
-      }
+      });
     });
 
-    document.getElementById('exitPopup').addEventListener('click', function(e) {
-      if (e.target === this) {
-        this.style.display = 'none';
-      }
-    });
-
-    // Sticky bar visibility
-    window.addEventListener('scroll', () => {
-      const sticky = document.getElementById('stickyBar');
-      if (window.scrollY > 300) {
-        sticky.style.opacity = '1';
-      } else {
-        sticky.style.opacity = '0.95';
-      }
+    // Track all "Enroll Now" and "Activate" buttons with FB Pixel
+    document.querySelectorAll('a[href="#cta"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        fbq('track', 'Lead');
+      });
     });
   </script>
 </body>
