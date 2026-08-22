@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Facebook Pixel Code -->
+  <!-- TikTok Pixel Code Start -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1787122752838589');
-    fbq('track', 'PageView');
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+        var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+        ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+      ttq.load('DA4NOFBC77UC8FLIVKR0');
+      ttq.page();
+    }(window, document, 'ttq');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1787122752838589&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+  <!-- TikTok Pixel Code End -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
@@ -538,7 +533,7 @@
           <li class="nav-item"><a class="nav-link text-white-50" href="#results">Results</a></li>
           <li class="nav-item"><a class="nav-link text-white-50" href="#video">Video Proof</a></li>
           <li class="nav-item"><a class="nav-link text-white-50" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="btn btn-sm gradient-primary btn-glow px-4 rounded-pill text-white" href="#" onclick="fbq('track', 'Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-1"></i>Enroll</a></li>
+          <li class="nav-item"><a class="btn btn-sm gradient-primary btn-glow px-4 rounded-pill text-white" href="#" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-1"></i>Enroll</a></li>
         </ul>
       </div>
     </div>
@@ -560,8 +555,8 @@
             <span class="trust-badge"><i class="fas fa-tools text-secondary-custom me-2"></i>Practical Training</span>
           </div>
           <div class="d-flex flex-wrap gap-3">
-            <a href="#" class="btn gradient-primary btn-glow px-5 py-3 rounded-pill fw-semibold" onclick="fbq('track', 'Lead'); openCheckout(); return false;"><i class="fas fa-user-graduate me-2"></i>Join Now</a>
-            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light px-5 py-3 rounded-pill fw-semibold border-2" onclick="fbq('track', 'Lead');"><i class="fab fa-telegram me-2"></i>Contact Us on Telegram</a>
+            <a href="#" class="btn gradient-primary btn-glow px-5 py-3 rounded-pill fw-semibold" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-user-graduate me-2"></i>Join Now</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light px-5 py-3 rounded-pill fw-semibold border-2" onclick="ttq.track('Lead');"><i class="fab fa-telegram me-2"></i>Contact Us on Telegram</a>
           </div>
         </div>
         <div class="col-lg-5 d-none d-lg-block text-center">
@@ -608,8 +603,8 @@
       <div class="glass p-4 p-md-5 row g-4 align-items-center">
         <div class="col-md-8">
           <h3 class="fw-bold"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>🎓 2026 Student Registration Is Now Open</h3>
-          <p class="text-white-50">Applications are currently open for new students joining PROMISETECH ACADEMY. To activate your student account and gain access to the learning portal, an <strong class="text-secondary-custom">Activation Fee of ₦3,000</strong> is required. After successful activation, you'll receive your student dashboard, learning materials (video lessons + downloadable PDF guides), and course access instructions.</p>
-          <p class="text-white-50 small mt-2"><i class="fas fa-heart text-secondary-custom me-2"></i>These skills changed my life, and I want as many people as possible to have access to them — that's why the activation fee is kept this low, so cost is never the reason someone gets left behind.</p>
+          <p class="text-white-50">Applications are currently open for new students joining PROMISETECH ACADEMY. To activate your student account and gain access to the learning portal, an <strong class="text-secondary-custom">Activation Fee</strong> is required. After successful activation, you'll receive your student dashboard, learning materials (video lessons + downloadable PDF guides), and course access instructions.</p>
+          <p class="text-white-50 small mt-2"><i class="fas fa-heart text-secondary-custom me-2"></i>These skills changed my life, and I want as many people as possible to have access to them — that's why the activation fee is kept accessible, so cost is never the reason someone gets left behind.</p>
         </div>
         <div class="col-md-4 text-md-end">
           <span class="badge bg-success bg-opacity-25 text-success p-3 fs-6 rounded-pill"><i class="fas fa-check-circle me-1"></i> Admission Status: OPEN</span>
@@ -661,7 +656,7 @@
         <div class="col-md-6">
           <h2 class="section-title mb-4">Student Registration Process</h2>
           <div class="timeline-step"><span class="step-number">1</span><h6>Complete Registration</h6></div>
-          <div class="timeline-step"><span class="step-number">2</span><h6>Activate Student Account</h6><span class="badge bg-secondary-custom bg-opacity-25 text-secondary-custom px-3 py-2 rounded-pill">Activation Fee: ₦3,000</span></div>
+          <div class="timeline-step"><span class="step-number">2</span><h6>Activate Student Account</h6><span class="badge bg-secondary-custom bg-opacity-25 text-secondary-custom px-3 py-2 rounded-pill">Activation Fee</span></div>
           <div class="timeline-step"><span class="step-number">3</span><h6>Send Payment Proof on WhatsApp</h6></div>
           <div class="timeline-step"><span class="step-number">4</span><h6>Receive Login Details & Access Dashboard</h6></div>
           <div class="timeline-step"><span class="step-number">5</span><h6>Start Learning (Videos + PDFs)</h6></div>
@@ -720,7 +715,7 @@
       <div class="faq-item"><h6><i class="fas fa-user-plus text-primary-custom me-2"></i>Who can enroll?</h6><p class="small text-white-50">Anyone interested in digital marketing, from beginners to intermediate learners.</p></div>
       <div class="faq-item"><h6><i class="fas fa-question text-primary-custom me-2"></i>Do I need experience?</h6><p class="small text-white-50">No, the training is beginner-friendly and covers everything from scratch.</p></div>
       <div class="faq-item"><h6><i class="fas fa-file-alt text-primary-custom me-2"></i>What format is the course in?</h6><p class="small text-white-50">The course includes both video lessons and downloadable PDF guides, so you can watch, read, and revisit the material anytime.</p></div>
-      <div class="faq-item"><h6><i class="fas fa-key text-primary-custom me-2"></i>How do I activate my account?</h6><p class="small text-white-50">Pay the ₦3,000 activation fee to the account details provided, then send your payment confirmation via WhatsApp to unlock your dashboard and materials.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-key text-primary-custom me-2"></i>How do I activate my account?</h6><p class="small text-white-50">Pay the activation fee to the account details provided, then send your payment confirmation via WhatsApp to unlock your dashboard and materials.</p></div>
       <div class="faq-item"><h6><i class="fas fa-clock text-primary-custom me-2"></i>When do I receive access?</h6><p class="small text-white-50">Immediately after your payment is confirmed on WhatsApp, you'll get your login details.</p></div>
     </div>
   </section>
@@ -731,10 +726,10 @@
       <div class="text-center">
         <h2 class="fw-bold display-6">Ready To Become A Digital Marketing Professional?</h2>
         <p class="text-white-50 mb-2">Join hundreds of students learning practical digital marketing skills with PROMISETECH ACADEMY.</p>
-        <p class="text-white-50 small mb-5"><i class="fas fa-heart text-secondary-custom me-2"></i>I've personally benefited so much from these skills that I kept the activation fee this low — just ₦3,000 — so everyone who's serious can afford to start.</p>
+        <p class="text-white-50 small mb-5"><i class="fas fa-heart text-secondary-custom me-2"></i>I've personally benefited so much from these skills that I kept the activation fee accessible — so everyone who's serious can afford to start.</p>
         <div class="pricing-card">
           <h5 class="text-uppercase text-secondary-custom">Student Account Activation</h5>
-          <div class="price">₦3,000</div>
+          <div class="price">Activation Fee</div>
           <ul class="list-unstyled mt-3 text-start">
             <li><i class="fas fa-check text-secondary-custom me-2"></i>Lifetime Course Access</li>
             <li><i class="fas fa-video text-secondary-custom me-2"></i>Full Video Lessons</li>
@@ -744,11 +739,11 @@
           </ul>
 
           <div class="d-grid gap-3 mt-4">
-            <a href="#" id="enrollTrigger" class="btn gradient-primary btn-glow py-3 rounded-pill fw-bold" onclick="fbq('track', 'Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-2"></i> Join Now</a>
+            <a href="#" id="enrollTrigger" class="btn gradient-primary btn-glow py-3 rounded-pill fw-bold" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-2"></i> Join Now</a>
           </div>
 
           <div class="d-grid gap-3 mt-3">
-            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light py-3 rounded-pill" onclick="fbq('track', 'Lead');"><i class="fab fa-telegram me-2"></i> Contact Us on Telegram</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light py-3 rounded-pill" onclick="ttq.track('Lead');"><i class="fab fa-telegram me-2"></i> Contact Us on Telegram</a>
           </div>
         </div>
       </div>
@@ -776,11 +771,11 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-6 col-md-4">
-          <span class="price-tag"><i class="fas fa-tag me-1"></i>₦3,000</span>
-          <span class="text-white-50 small d-none d-sm-inline">Activation Fee</span>
+          <span class="price-tag"><i class="fas fa-tag me-1"></i>Activation</span>
+          <span class="text-white-50 small d-none d-sm-inline">Fee</span>
         </div>
         <div class="col-6 col-md-8 text-end">
-          <a href="#" class="btn gradient-primary btn-glow" onclick="fbq('track', 'Lead'); openCheckout(); return false;">
+          <a href="#" class="btn gradient-primary btn-glow" onclick="ttq.track('Lead'); openCheckout(); return false;">
             <i class="fas fa-user-plus me-2"></i>Become Our Student Today
           </a>
         </div>
@@ -804,7 +799,7 @@
 
       <div class="checkout-amount-box">
         <div class="label">Amount to pay</div>
-        <div class="amount">₦3,000</div>
+        <div class="amount">Activation Fee</div>
       </div>
 
       <div>
@@ -832,11 +827,11 @@
       </div>
 
       <div class="checkout-note">
-        <i class="fas fa-info-circle me-1"></i> Transfer exactly <strong>₦3,000</strong> to the account above, then tap the button below to confirm your payment on WhatsApp. Your access will be sent immediately.
+        <i class="fas fa-info-circle me-1"></i> Transfer the activation fee to the account above, then tap the button below to confirm your payment on WhatsApp. Your access will be sent immediately.
       </div>
 
       <div class="d-grid">
-        <a href="https://wa.me/2348127348137?text=Hello%2C%20I%20have%20completed%20my%20%E2%82%A63%2C000%20payment%20for%20PromiseTech%20Academy%20and%20I%27m%20sending%20my%20proof%20of%20payment." target="_blank" class="selar-btn text-decoration-none text-center" onclick="fbq('track', 'Purchase', {value: 3000, currency: 'NGN'});">
+        <a href="https://wa.me/2348127348137?text=Hello%2C%20I%20have%20completed%20my%20payment%20for%20PromiseTech%20Academy%20and%20I%27m%20sending%20my%20proof%20of%20payment." target="_blank" class="selar-btn text-decoration-none text-center" onclick="ttq.track('Purchase');">
           <i class="fab fa-whatsapp me-2"></i> I Have Completed My Payment
         </a>
       </div>
@@ -911,10 +906,10 @@
       });
     }
 
-    // Track all "Enroll Now" and "Activate" buttons with FB Pixel
+    // Track all "Enroll Now" and "Activate" buttons with TikTok Pixel
     document.querySelectorAll('a[href="#cta"]').forEach(btn => {
       btn.addEventListener('click', function() {
-        fbq('track', 'Lead');
+        if (window.ttq) ttq.track('Lead');
       });
     });
   </script>
